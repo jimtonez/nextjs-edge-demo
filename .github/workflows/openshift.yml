@@ -135,7 +135,7 @@ jobs:
           directory: .
           file_name: .env.local
 
-      - name: Log in to Quay.io
+      - name: Log in to Red Hat Regsitry
         uses: redhat-actions/podman-login@v1
         with:
           username: ${{ env.RH_REGISTRY_USER }}
@@ -155,6 +155,13 @@ jobs:
           # Otherwise, point this to your Dockerfile/Containerfile relative to the repository root.
           dockerfiles: |
             ./Containerfile.dev
+
+      - name: Log in to GitHub Registry
+        uses: redhat-actions/podman-login@v1
+        with:
+          registry: ${{ env.IMAGE_REGISTRY }}
+          username: ${{ env.IMAGE_REGISTRY_USER }}
+          password: ${{ env.IMAGE_REGISTRY_PASSWORD }}
 
       # https://github.com/redhat-actions/push-to-registry#readme
       - name: Push to registry
