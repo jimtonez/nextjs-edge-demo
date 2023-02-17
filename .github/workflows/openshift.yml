@@ -156,12 +156,12 @@ jobs:
           dockerfiles: |
             ./Containerfile.dev
 
-      # - name: Log in to GitHub Registry
-      #   uses: redhat-actions/podman-login@v1
-      #   with:
-      #     registry: ${{ env.IMAGE_REGISTRY }}
-      #     username: ${{ env.IMAGE_REGISTRY_USER }}
-      #     password: ${{ env.IMAGE_REGISTRY_PASSWORD }}
+      - name: Log in to GitHub Registry
+        uses: redhat-actions/podman-login@v1
+        with:
+          registry: ${{ env.IMAGE_REGISTRY }}
+          username: ${{ env.IMAGE_REGISTRY_USER }}
+          password: ${{ env.IMAGE_REGISTRY_PASSWORD }}
 
       # https://github.com/redhat-actions/push-to-registry#readme
       - name: Push to registry
