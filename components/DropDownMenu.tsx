@@ -14,14 +14,14 @@ function classNames(...classes: any) {
 
 export default function DropDownMenu() {
 
-    const { data: session } = useSession();
+  const { data: session } = useSession();
 
   return (
     <Popover className="z-0 relative">
       {({ open }) => (
         <>
           <Popover.Button className="outline-none">
-            <img src={session.user.image} alt="" className="mt-1.5 h-10 rounded-full cursor-pointer" />
+            <img src={session?.user?.image!} alt="" className="mt-1.5 h-10 rounded-full cursor-pointer" />
           </Popover.Button>
 
           <Transition

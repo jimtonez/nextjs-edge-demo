@@ -1,6 +1,6 @@
 # nextjs-edge-demo
 
-This project hosts the nextjs edge demo, a containerized application designed to run in OpenShift. Below are the instructions for setting up a local development environment to run the application.
+This project hosts the nextjs edge demo, a containerized application designed to run in OpenShift. Below are the instructions for setting up the local development environment and running the application.
 
 ## Getting Started
 
