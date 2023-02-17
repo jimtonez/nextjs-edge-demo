@@ -37,6 +37,7 @@ env:
 
   # 🖊️ EDIT to set a name for your OpenShift app, or a default one will be generated below.
   APP_NAME: "nextjs-edge-demo-dev"
+  REGISTRY_PATH: "ghcr.io/jimtonez/nextjs-edge-demo-dev:latest"
 
   # 🖊️ EDIT with the port your application should be accessible on.
   # If the container image exposes *exactly one* port, this can be left blank.
@@ -156,12 +157,12 @@ jobs:
           dockerfiles: |
             ./Containerfile.dev
 
-      - name: Log in to GitHub Registry
-        uses: redhat-actions/podman-login@v1
-        with:
-          registry: ${{ env.IMAGE_REGISTRY }}
-          username: ${{ env.IMAGE_REGISTRY_USER }}
-          password: ${{ env.IMAGE_REGISTRY_PASSWORD }}
+      # - name: Log in to GitHub Registry
+      #   uses: redhat-actions/podman-login@v1
+      #   with:
+      #     registry: ${{ env.IMAGE_REGISTRY }}
+      #     username: ${{ env.IMAGE_REGISTRY_USER }}
+      #     password: ${{ env.IMAGE_REGISTRY_PASSWORD }}
 
       # https://github.com/redhat-actions/push-to-registry#readme
       - name: Push to registry
@@ -197,7 +198,7 @@ jobs:
         uses: redhat-actions/oc-new-app@v1
         with:
           app_name: ${{ env.APP_NAME }}
-          image: ${{ steps.push-image.outputs.registry-path }}
+          image: ${{ env.REGISTRY_PATH }}
           namespace: ${{ env.OPENSHIFT_NAMESPACE }}
           port: ${{ env.APP_PORT }}
 
