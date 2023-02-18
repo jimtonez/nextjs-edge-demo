@@ -15,7 +15,7 @@ function Header () {
         <div className="bg-[#070D0D] shadow-md border-b border-gray-700 sticky top-0 z-50">
           <div className="flex justify-between max-w-7xl mx-1 lg:mx-auto">
             <div onClick={() => router.push('/')} className="p-4 flex items-center relative">
-              <span className="emoji" role="img" aria-label="rocket">🏈</span>
+              <span className="emoji" role="img" aria-label="rocket">⚽️</span>
               <p className="text-md text-white font-semibold pl-3 cursor-default">Edge Your Bets</p>
             </div>
             
