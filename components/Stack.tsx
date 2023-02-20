@@ -8,7 +8,7 @@ function Stack() {
             <div className="col-span-1 md:col-span-2 lg:col-span-3 xl:col-span-4 space-y-2">
                 <div className='flex items-center h-24 justify-center p-4 bg-[#070D0D] border border-red-600 border-dashed rounded-xl shadow-md cursor-pointer'>
                 <Image
-                src="/openshiftwhite.png"
+                src="/openshift.svg"
                 alt="OpenShift Logo"
                 width={180}
                 height={37}
@@ -24,7 +24,7 @@ function Stack() {
                     height={37}
                     />
                     </div>
-                    <div className='flex w-full h-24  items-center justify-center p-3 bg-[#070D0D] border border-green-300 border-dashed rounded-xl shadow-md cursor-pointer'>
+                    <div className='flex w-full h-24 items-center justify-center p-3 bg-[#070D0D] border border-green-300 border-dashed rounded-xl shadow-md cursor-pointer'>
                     <Image
                     // className={`${styles.logo}`}
                     src="/nodejs.svg"
@@ -33,7 +33,7 @@ function Stack() {
                     height={37}
                     />
                     </div>
-                    <div className='flex w-full h-24  items-center justify-center p-3 px-2 bg-[#070D0D] border border-blue-300 border-dashed rounded-xl shadow-md cursor-pointer'>
+                    <div className='flex w-full h-24 items-center justify-center p-3 px-2 bg-[#070D0D] border border-blue-300 border-dashed rounded-xl shadow-md cursor-pointer'>
                     <Image
                     // className={`${styles.logo}`}
                     src="/tailwind.png"
@@ -53,9 +53,9 @@ function Stack() {
                 </div>
                 <div className='flex h-24 items-center justify-center p-4 bg-[#070D0D] border border-red-600 border-dashed rounded-xl shadow-md cursor-pointer'>
                 <Image
-                src="/redhat.png"
+                src="/coreos.svg"
                 alt="OpenShift Logo"
-                width={65}
+                width={180}
                 height={37}
                 />
                 </div>
