@@ -14,7 +14,7 @@ function Hero () {
             <div className='flex flex-col md:px-4 xl:space-x-4'>
                 <ul className='list-none flex-col space-y-4'>
                     {events.map((event, index) => (
-                        <li key={event.id} className='flex aspect-w-3 aspect-h-2 lg:aspect-video items-center justify-between'>
+                        <li key={event.id} className='flex aspect-w-3 aspect-h-2 aspect-video items-center justify-between'>
                             <iframe key={event.id} id={event.id} className="object-cover md:rounded-xl lg:rounded-l-xl" width="100%" height="100%" src={event.url} />
                         </li>
                     ))}
