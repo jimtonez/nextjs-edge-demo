@@ -14,11 +14,10 @@ function Header () {
     return (
         <div className="bg-[#070D0D] shadow-md border-b border-gray-700 sticky top-0 z-50">
           <div className="flex justify-between max-w-7xl mx-1 lg:mx-auto">
-            <div onClick={() => router.push('/')} className="p-4 flex items-center relative">
+            <div onClick={() => router.push('/')} className="p-4 flex items-center cursor-pointer relative">
               <span className="emoji" role="img" aria-label="rocket">⚽️</span>
-              <p className="text-md text-white font-semibold pl-3 cursor-default">Edge Your Bets</p>
+              <p className="text-md text-white font-semibold pl-3">Edge Your Bets</p>
             </div>
-            
             <div className="flex items-center justify-end space-x-2 md:space-x-4">
               <HomeIcon onClick={() => router.push('/')} className="hidden md:navBtn" />
               {data ? (

@@ -45,9 +45,9 @@ function Stack() {
                 </div>
                 <div className='flex h-24 items-center justify-center p-4 bg-[#070D0D] border border-red-600 border-dashed rounded-xl shadow-md cursor-pointer'>
                 <Image
-                src="/redhat.png"
+                src="/runtimes.svg"
                 alt="OpenShift Logo"
-                width={65}
+                width={180}
                 height={37}
                 />
                 </div>

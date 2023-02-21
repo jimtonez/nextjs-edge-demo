@@ -10,12 +10,16 @@ type Props = {
 function SignInComponent({ providers }: Props) {
     return (
         <div className="mx-auto py-12 px-6 sm:p-20 xl:w-10/12">
-        <div role="hidden" className="mt-12 border-t">
+          <div className="flex items-center justify-center">
+            <span className="emoji text-3xl" role="img" aria-label="rocket">⚽️</span>
+            <p className="text-xl text-white font-semibold pl-3 cursor-default">Edge Your Bets</p>
+          </div>
+        <div role="hidden" className="mt-12 border-t border-gray-700">
             <span className="block w-max mx-auto -mt-3 px-4 text-center text-gray-700 bg-[#070D0D]">Sign in with</span>
         </div>
         <div className="mt-12 grid grid-cols-1">
           {Object.values(providers!).map((provider) => (
-            <button key={provider.id} className="py-3 px-6 bg-inherit border border-blue-400 shadow-sm rounded-lg hover:text-white dark:hover:text-[#101111] hover:bg-blue-400 dark:hover:bg-blue-400" onClick={() => signIn(provider.id, { callbackUrl: process.env.NEXTAUTH_URL || "http://localhost:3000"})}>
+            <button key={provider.id} className="py-3 px-6 bg-blue-400 hover:opacity-80 shadow-sm rounded-lg" onClick={() => signIn(provider.id, { callbackUrl: process.env.NEXTAUTH_URL || "http://localhost:3000"})}>
               <div className="flex gap-4 items-center justify-center">
                 <FcGoogle className="scale-150"/>
                 <span className="block w-max font-medium tracking-wide text-sm text-white">{provider.name}</span>
@@ -23,7 +27,7 @@ function SignInComponent({ providers }: Props) {
             </button>
           ))}
         </div>
-        <div role="hidden" className="mt-12 border-t">
+        <div role="hidden" className="mt-12 border-t border-gray-700">
             <span className="block w-max mx-auto -mt-3 px-4 text-center text-gray-700 bg-[#070D0D]">Or</span>
         </div>
         <form action="" className="space-y-6 py-6 text0white">
@@ -50,7 +54,7 @@ function SignInComponent({ providers }: Props) {
             </button>
           </div>
         </form>
-        <div className="border-t pt-12">
+        <div className="border-t border-gray-700 pt-12">
           <div className="space-y-2 text-center">
             <span className="block text-sm tracking-wide text-gray-500">By signing up, you agree to the Terms of Service. View our Privacy Policy.</span>
           </div>
