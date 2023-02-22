@@ -27,7 +27,7 @@ function Events () {
                                                 <Image src={event.logo} alt="" className="object-cover h-auto w-auto rounded-full" />
                                             </div>
                                         </div>
-                                        <div className="flex w-7/8 text-white text-lg font-semi-bold">
+                                        <div className="flex w-7/8 text-white text-base md:text-lg font-normal md:font-semibold">
                                             <h1>{event.title}</h1>
                                         </div>
                                     </div>
