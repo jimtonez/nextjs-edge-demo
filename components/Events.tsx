@@ -19,7 +19,7 @@ function Events () {
                                     <iframe key={event.id} id={event.id} className=" md:rounded-xl md:rounded-b-none" width="100%" height="100%" src={event.url} />
                                 </div>
                             </div>
-                            <div className='flex flex-col aspect-w-2 aspect-h-1'>
+                            <div className='flex flex-col aspect-w-3 sm:aspect-w-2 aspect-h-2 sm:aspect-h-1'>
                                 <div className='flex flex-col bg-[#070D0D] rounded-b-xl border border-gray-700 border-t-0 hover:bg-opacity-80 p-4 space-y-4'>
                                     <div className='flex flex-row w-full h-auto items-center space-x-2'>
                                         <div className='flex w-1/8'>
