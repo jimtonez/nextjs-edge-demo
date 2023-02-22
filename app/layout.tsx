@@ -1,12 +1,6 @@
 import '../styles/globals.css'
-import Header from '../components/Header'
 import { getServerSession } from "next-auth"
 import AuthContext from './AuthContext'
-
-// import dynamic from 'next/dynamic'
-// const Header = dynamic(() => import("../components/Header"), {
-// ssr: false,
-// });
 
 export default async function RootLayout({
   children
