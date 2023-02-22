@@ -19,30 +19,30 @@ function Leagues () {
             <div className="col-span-1 bg-[#212427] border border-gray-700 rounded-xl shadow-md cursor-pointer">
                 <div className="flex flex-col items-center justify-center gap-2">
                     <div className="flex bg-[#070D0D] border-b border-gray-700 w-full justify-center rounded-t-xl pb-3">
-                        <p className="text-white mt-4 font-semibold">NHL</p>
+                        <p className="text-white mt-4 font-semibold">NFL</p>
                     </div>
                     <div className="p-10 h-3/4 w-3/4 flex items-center justify-center">
-                        <Image className="object-cover rounded-xl" src="/NHL-emblem.jpg" alt="" width={140} height={140} />
+                        <Image className="object-cover rounded-xl" src="/nfl-logo.jpeg" alt="" width={140} height={140} />
                     </div>
                 </div>
             </div>
             <div className="col-span-1 bg-[#212427] border border-gray-700 rounded-xl shadow-md cursor-pointer">
                 <div className="flex flex-col items-center justify-center gap-2">
                     <div className="flex bg-[#070D0D] border-b border-gray-700 w-full justify-center rounded-t-xl pb-3">
-                        <p className="text-white mt-4 font-semibold">NHL</p>
+                        <p className="text-white mt-4 font-semibold">NBA</p>
                     </div>
                     <div className="p-10 h-3/4 w-3/4 flex items-center justify-center">
-                        <Image className="object-cover rounded-xl" src="/NHL-emblem.jpg" alt="" width={140} height={140} />
+                        <Image className="object-cover rounded-xl" src="/nbalogo.webp" alt="" width={140} height={140} />
                     </div>
                 </div>
             </div>
             <div className="col-span-1 bg-[#212427] border border-gray-700 rounded-xl shadow-md cursor-pointer">
                 <div className="flex flex-col items-center justify-center gap-2">
                     <div className="flex bg-[#070D0D] border-b border-gray-700 w-full justify-center rounded-t-xl pb-3">
-                        <p className="text-white mt-4 font-semibold">NHL</p>
+                        <p className="text-white mt-4 font-semibold">UFC</p>
                     </div>
                     <div className="p-10 h-3/4 w-3/4 flex items-center justify-center">
-                        <Image className="object-cover rounded-xl" src="/NHL-emblem.jpg" alt="" width={140} height={140} />
+                        <Image className="object-cover rounded-xl" src="/UFC-LOGO.png" alt="" width={140} height={140} />
                     </div>
                 </div>
             </div>
