@@ -11,11 +11,11 @@ function Hero () {
             <p className='text-white text-base lg:text-xl font-semibold'>Events</p>
         </div>
         <div className='col-span-1 md:col-span-2 lg:col-span-4 shadow-md'>
-            <div className='flex flex-col md:px-4 xl:space-x-4'>
+            <div className='flex flex-col md:px-4'>
                 <ul className='list-none flex-col items-center justify-center space-y-4'>
                     {events.map((event, index) => (
-                        <li key={event.id} className='flex aspect-w-3 aspect-h-2 aspect-video'>
-                            <iframe key={event.id} id={event.id} className="object-cover md:rounded-xl lg:rounded-l-xl" width="100%" height="100%" src={event.url} />
+                        <li key={event.id} className='flex aspect-w-3 aspect-h-2'>
+                            <iframe key={event.id} id={event.id} className="md:rounded-xl lg:rounded-l-xl" width="100%" height="100%" src={event.url} />
                         </li>
                     ))}
                 </ul>

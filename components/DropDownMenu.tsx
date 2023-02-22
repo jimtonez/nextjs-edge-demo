@@ -55,7 +55,7 @@ export default function DropDownMenu() {
                             <span className='text-sm text-white font-normal'>Settings</span>
                         </a>
                         </li>
-                        <li key="Signout" onClick={() => signOut()} className="flow-root">
+                        <li key="Signout" onClick={() => signOut({ callbackUrl: "/"})} className="flow-root">
                         <a
                             href="#"
                             className="-m-3 p-3 flex items-center gap-4 rounded-md text-base font-medium text-gray-700 hover:text-[#ff0000] hover:bg-gray-50 dark:hover:bg-opacity-5 transition ease-in-out duration-150"
