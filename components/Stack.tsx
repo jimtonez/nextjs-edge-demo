@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import { signIn } from 'next-auth/react'
 import styles from '../app/page.module.css'
 
 function Stack() {
