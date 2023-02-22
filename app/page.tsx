@@ -3,7 +3,7 @@ import { Inter } from '@next/font/google'
 import styles from './page.module.css'
 import Leagues from '../components/Topics'
 import Features from '../components/Features'
-import Hero from '../components/Hero'
+import Header from '../components/Header'
 import Stack from '../components/Stack'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -11,8 +11,9 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <main className='flex h-screen flex-col'>
+      <Header />
       <div className='space-y-4'>
-        <Hero />
+        {/* <Hero /> */}
         <Features />
         <Leagues />
         <Leagues />

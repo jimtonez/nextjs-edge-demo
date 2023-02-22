@@ -19,7 +19,7 @@ function SignInComponent({ providers }: Props) {
         </div>
         <div className="mt-12 grid grid-cols-1">
           {Object.values(providers!).map((provider) => (
-            <button key={provider.id} className="py-3 px-6 bg-blue-400 hover:opacity-80 shadow-sm rounded-lg" onClick={() => signIn(provider.id, { callbackUrl: process.env.NEXTAUTH_URL || "http://localhost:3000"})}>
+            <button key={provider.id} className="py-3 px-6 bg-blue-400 hover:opacity-80 shadow-sm rounded-lg" onClick={() => signIn(provider.id, { callbackUrl: process.env.NEXTAUTH_URL || "http://localhost:3000/events"})}>
               <div className="flex gap-4 items-center justify-center">
                 <FcGoogle className="scale-150"/>
                 <span className="block w-max font-medium tracking-wide text-sm text-white">{provider.name}</span>
