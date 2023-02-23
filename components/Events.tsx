@@ -28,7 +28,7 @@ function Events () {
                                             </div>
                                         </div>
                                         <div className="flex w-7/8 text-white text-base md:text-lg font-normal md:font-semibold">
-                                            <h1>{event.title}</h1>
+                                            <h1 className='line-clamp-2'>{event.title}</h1>
                                         </div>
                                     </div>
                                     <div className='flex flex-row items-center justify-between space-x-2'>
