@@ -15,13 +15,13 @@ function Events () {
                     {events.map((event, index) => (
                         <li key={event.id} className='cursor-pointer'>
                             <div className='flex flex-col aspect-w-8 aspect-h-2'>
-                                <div className='flex w-auto h-auto items-center justify-center rounded-t-xl border border-b-none border-gray-700 p-2 lg:p-4 space-x-4'>
+                                <div className='flex w-auto h-auto items-center justify-center rounded-t-xl border border-b-0 border-gray-700 p-2 lg:p-4 space-x-4'>
                                     {event.teams?.map((team, index) => (
                                         <div key={team.name} className='flex flex-col text-white w-full h-full items-center justify-center border border-gray-700 border-dashed rounded-xl p-2 lg:p-4'>
                                             <div className={`${index === 1 ? 'hidden' : 'flex'} h-12 lg:h-14 w-12 lg:w-14 rounded-full border border-red-600 border-2`}>
                                                 <Image src={team.logo} alt="" className="object-cover h-auto w-auto rounded-full" />
                                             </div>
-                                            <p className={`${index === 1 ? 'text-2xl font-bold' : 'flex'} line-clamp-1`}>{team.name}</p>
+                                            <p className={`${index === 1 ? 'text-2xl font-bold' : 'hidden text-base'} sm:flex sm:line-clamp-1`}>{team.name}</p>
                                         </div>
                                     ))}
                                 </div>
