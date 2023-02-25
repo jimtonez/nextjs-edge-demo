@@ -212,8 +212,8 @@ export const events = [
                 logo: newcastle
             },
             {
-                name: "0-2",
-                logo: leicester
+                name: "Tie",
+                logo: premier
             },
             {
                 name: "Liverpool",
@@ -221,6 +221,156 @@ export const events = [
             }
         ],
         score: "0-2",
+        predictions: [
+            {
+                name: "Match Result",
+                tabs: [
+                    {
+                        name: "Regular Time",
+                        results: [
+                            {
+                                team: "Manchester United",
+                                logo: newcastle,
+                                odds: "-175",
+                                trend: "negative"
+                            },
+                            {
+                                team: "Draw",
+                                logo: premier,
+                                odds: "+350",
+                                trend: "positive"
+                            },
+                            {
+                                team: "Leicester City",
+                                logo: liverpool,
+                                odds: "+480",
+                                trend: "positive"
+                            }
+                        ]
+                    },
+                    {
+                        name: "1st Half",
+                        results: [
+                            {
+                                team: "Manchester United",
+                                logo: newcastle,                                
+                                odds: "+106",
+                                trend: "negative"
+                            },
+                            {
+                                team: "Draw",
+                                logo: premier,                               
+                                odds: "+161",
+                                trend: "positive"
+                            },
+                            {
+                                team: "Leicester City",
+                                logo: liverpool,
+                                odds: "+440",
+                                trend: "negative"
+                            }
+                        ]
+                    },
+                    {
+                        name: "2nd Half",
+                        results: [
+                            {
+                                team: "Manchester United",
+                                logo: newcastle,                                
+                                odds: "-175",
+                                trend: "negative"
+                            },
+                            {
+                                team: "Draw",
+                                logo: premier,    
+                                odds: "+350",
+                                trend: "positive"
+                            },
+                            {
+                                team: "Leicester City",
+                                logo: liverpool,
+                                odds: "+480",
+                                trend: "positive"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                name: "Match Result",
+                tabs: [
+                    {
+                        name: "Regular Time",
+                        results: [
+                            {
+                                team: "Manchester United",
+                                logo: newcastle,
+                                odds: "-175",
+                                trend: "negative"
+                            },
+                            {
+                                team: "Draw",
+                                logo: premier,
+                                odds: "+350",
+                                trend: "positive"
+                            },
+                            {
+                                team: "Leicester City",
+                                logo: liverpool,
+                                odds: "+480",
+                                trend: "positive"
+                            }
+                        ]
+                    },
+                    {
+                        name: "1st Half",
+                        results: [
+                            {
+                                team: "Manchester United",
+                                logo: newcastle,                                
+                                odds: "+106",
+                                trend: "negative"
+                            },
+                            {
+                                team: "Draw",
+                                logo: premier,                               
+                                odds: "+161",
+                                trend: "positive"
+                            },
+                            {
+                                team: "Leicester City",
+                                logo: liverpool,
+                                odds: "+440",
+                                trend: "negative"
+                            }
+                        ]
+                    },
+                    {
+                        name: "2nd Half",
+                        results: [
+                            {
+                                team: "Manchester United",
+                                logo: newcastle,                                
+                                odds: "-175",
+                                trend: "negative"
+                            },
+                            {
+                                team: "Draw",
+                                logo: premier,    
+                                odds: "+350",
+                                trend: "positive"
+                            },
+                            {
+                                team: "Leicester City",
+                                logo: liverpool,
+                                odds: "+480",
+                                trend: "positive"
+                            }
+                        ]
+                    }
+                ]
+            },
+        ],
         url: "https://www.youtube.com/embed/w3zQkhKImHk"
     }
 ];
