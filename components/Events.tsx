@@ -48,7 +48,7 @@ function Events () {
                             </div>
                             <div className='flex flex-col aspect-w-3 sm:aspect-w-2 aspect-h-2 sm:aspect-h-1'>
                                 <div className='flex flex-col bg-[#070D0D] rounded-b-xl border border-gray-700 border-t-0 hover:bg-opacity-80 p-2 lg:p-4 space-y-4'>
-                                    <div className='flex flex-row w-full h-auto items-center space-x-2'>
+                                    <div className='hidden sm:flex flex-row w-full h-auto items-center space-x-2'>
                                         <div className='flex w-1/8'>
                                             <div className="flex h-12 lg:h-14 w-12 lg:w-14 rounded-full border border-red-600 border-2">
                                                 <Image src={event.logo} alt="" className="object-cover h-auto w-auto rounded-full" />
@@ -70,7 +70,7 @@ function Events () {
                                             </div>
                                         ))}
                                     </div>
-                                    <div className='flex flex-row w-full h-3/4 items-center justify-between space-x-2 md:space-x-4 md:px-2 md:pb-2 lg:pb-0 lg:px-0'>
+                                    <div className='flex flex-row w-full h-full items-center justify-between space-x-2 md:space-x-4 md:px-2 md:pb-2 lg:pb-0 lg:px-0'>
                                         {event.predictions?.map((prediction) => (
                                             <div key={prediction.name} className='flex flex-col w-full h-full border border-gray-700 border-dashed rounded-xl'>
                                                 <div className='flex flex-row h-1/4 w-full items-center rounded-t-xl border-b border-gray-700 border-dashed'>
@@ -85,20 +85,20 @@ function Events () {
                                                     ))}
                                                     </div>
                                                 </div>
-                                                <div className='flex flex-row items-center justify-around w-full h-auto p-2 lg:p-4'>
-                                                    <div className='flex flex-col w-auto h-auto items-center'>
+                                                <div className='flex flex-row items-center justify-around w-full h-full'>
+                                                    <div className='flex flex-col w-auto h-full items-center justify-around'>
                                                     {event.teams.map((team, index) => (
                                                         <div key={team.name} className='flex w-full h-auto items-center p-1 space-x-4'>
-                                                            <div className={`w-10 lg:w-11 h-10 lg:h-11 rounded-full border-2 border-red-600`}>
+                                                            <div className={`w-10 sm:w-12 h-10 sm:h-12 rounded-full border-2 border-red-600`}>
                                                                 <Image src={team.logo} alt="" className="object-cover text-white h-auto w-auto rounded-full" />
                                                             </div>
-                                                            <p className='hidden md:flex md:line-clamp-1 text-white'>{team.name}</p>
+                                                            <p className='hidden sm:flex sm:line-clamp-1 text-white'>{team.name}</p>
                                                         </div>
                                                     ))}
                                                     </div>
-                                                    <div className='flex flex-col w-auto h-auto items-center justify-center space-y-2 lg:space-y-3'>
+                                                    <div className='flex flex-col w-auto h-full items-center justify-around p-1'>
                                                         {prediction.tabs?.map((tab, index) => (
-                                                            <div key={tab.name} className='flex flex-col w-auto h-auto items-center justify-center'>
+                                                            <div key={tab.name} className='flex flex-col w-auto h-auto'>
                                                                 <MatchResult />
                                                             </div>
                                                         ))}
