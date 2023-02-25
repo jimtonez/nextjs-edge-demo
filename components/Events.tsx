@@ -1,8 +1,23 @@
+"use client"
 import Image from 'next/image'
 import proBowl from '../public/probowl.jpg'
 import { events } from "../constants"
+import { useState } from "react"
+import MatchResult from './predictions/soccer/MatchResult'
 
 function Events () {
+
+    const [ predictionState, setPredictionState ] = useState("R")
+
+    const handlePredictionState = (tab: string) => {
+        setPredictionState(tab)
+        console.log(predictionState)
+    }
+
+    const renderOdds = (tab: string) => {
+
+
+    }
 
     return (
     <section className="grid grid-cols-1 md:grid-cols-2 md:max-w-3xl lg:grid-cols-3 lg:max-w-5xl xl:grid-cols-4 xl:max-w-6xl mx-auto">
@@ -14,21 +29,21 @@ function Events () {
                 <ul className='list-none flex flex-col space-y-4'>
                     {events.map((event, index) => (
                         <li key={event.id} className='cursor-pointer'>
-                            <div className='flex flex-col aspect-w-8 aspect-h-2'>
-                                <div className='flex w-auto h-auto items-center justify-center rounded-t-xl border border-b-0 border-gray-700 p-2 lg:p-4 space-x-4'>
+                            <div className='flex flex-col aspect-w-4 aspect-h-1'>
+                                <div className='flex w-auto h-auto items-center justify-center rounded-t-xl border border-b-0 border-gray-700 p-2 md:p-4 space-x-2 md:space-x-4'>
                                     {event.teams?.map((team, index) => (
                                         <div key={team.name} className='flex flex-col text-white w-full h-full items-center justify-center border border-gray-700 border-dashed rounded-xl p-2 lg:p-4'>
                                             <div className={`${index === 1 ? 'hidden' : 'flex'} h-12 lg:h-14 w-12 lg:w-14 rounded-full border border-red-600 border-2`}>
                                                 <Image src={team.logo} alt="" className="object-cover h-auto w-auto rounded-full" />
                                             </div>
-                                            <p className={`${index === 1 ? 'text-2xl font-bold' : 'hidden text-base'} sm:flex sm:line-clamp-1`}>{team.name}</p>
+                                            <p className={`${index === 1 ? 'text-2xl font-bold sm:flex' : 'hidden'}`}>{event.score}</p>
                                         </div>
                                     ))}
                                 </div>
                             </div>
                             <div className='flex flex-col aspect-w-3 aspect-h-2'>
                                 <div className='flex'>
-                                    <iframe key={event.id} id={event.id} className="" width="100%" height="100%" src={event.url} />
+                                    <iframe key={event.id} id={event.id} className="border-l border-r border-gray-700" width="100%" height="100%" src={event.url} />
                                 </div>
                             </div>
                             <div className='flex flex-col aspect-w-3 sm:aspect-w-2 aspect-h-2 sm:aspect-h-1'>
@@ -55,22 +70,42 @@ function Events () {
                                             </div>
                                         ))}
                                     </div>
-                                    <div className='flex flex-row w-full h-3/4 items-center justify-between space-x-2'>
-                                        {/* <div className='flex flex-col w-full h-full border border-gray-700 border-dashed rounded-xl'>
-                                            <div className='flex h-1/4 w-full items-center justify-center rounded-t-xl border-b border-gray-700 border-dashed'>
-                                                <h1 className='text-white'>Score</h1>
+                                    <div className='flex flex-row w-full h-3/4 items-center justify-between space-x-2 md:space-x-4 md:px-2 md:pb-2 lg:pb-0 lg:px-0'>
+                                        {event.predictions?.map((prediction) => (
+                                            <div key={prediction.name} className='flex flex-col w-full h-full border border-gray-700 border-dashed rounded-xl'>
+                                                <div className='flex flex-row h-1/4 w-full items-center rounded-t-xl border-b border-gray-700 border-dashed'>
+                                                    <div className='flex justify-center w-3/4 lg:w-1/2'>
+                                                        <h1 className='text-white'>{prediction.name}</h1>
+                                                    </div>
+                                                    <div className='flex justify-center w-1/4 lg:w-1/2 flex-row items-end space-x-2'>
+                                                    {prediction.tabs?.map((tab, index) => (
+                                                        <div onClick={() => handlePredictionState(tab.name.charAt(0))} key={tab.name} className={`${index !== 0 ? 'hidden lg:flex' : 'flex'} h-8 xl:h-10 w-8 xl:w-10 bg-gray-700 items-center justify-center rounded-full border border-red-600 border-2`}>
+                                                            <p>{tab.name.charAt(0)}</p>
+                                                        </div>
+                                                    ))}
+                                                    </div>
+                                                </div>
+                                                <div className='flex flex-row items-center justify-around w-full h-auto p-2 lg:p-4'>
+                                                    <div className='flex flex-col w-auto h-auto items-center'>
+                                                    {event.teams.map((team, index) => (
+                                                        <div key={team.name} className='flex w-full h-auto items-center p-1 space-x-4'>
+                                                            <div className={`w-10 lg:w-11 h-10 lg:h-11 rounded-full border-2 border-red-600`}>
+                                                                <Image src={team.logo} alt="" className="object-cover text-white h-auto w-auto rounded-full" />
+                                                            </div>
+                                                            <p className='hidden md:flex md:line-clamp-1 text-white'>{team.name}</p>
+                                                        </div>
+                                                    ))}
+                                                    </div>
+                                                    <div className='flex flex-col w-auto h-auto items-center justify-center space-y-2 lg:space-y-3'>
+                                                        {prediction.tabs?.map((tab, index) => (
+                                                            <div key={tab.name} className='flex flex-col w-auto h-auto items-center justify-center'>
+                                                                <MatchResult />
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div> */}
-                                        <div className='flex w-full h-full border border-gray-700 border-dashed rounded-xl'>
-                                             <div className='flex h-1/4 w-full items-center justify-center rounded-t-xl border-b border-gray-700 border-dashed'>
-                                                <h1 className='text-white'>Spread</h1>
-                                            </div>
-                                        </div>
-                                        <div className='flex w-full h-full border border-gray-700 border-dashed rounded-xl'>
-                                            <div className='flex h-1/4 w-full items-center justify-center rounded-t-xl border-b border-gray-700 border-dashed'>
-                                                <h1 className='text-white'>Totals</h1>
-                                            </div>
-                                        </div>
+                                        ))}
                                     </div>
                                 </div>
                             </div>

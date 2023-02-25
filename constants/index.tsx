@@ -4,6 +4,7 @@ import manchesterUnited from '../public/manchester_united.png'
 import leicester from '../public/leicester.png'
 import liverpool from '../public/liverpool.png'
 import newcastle from '../public/newcastle.png'
+import premier from '../public/premier.webp'
 
 export const events = [
     {
@@ -22,8 +23,8 @@ export const events = [
                 logo: manchesterUnited
             },
             {
-                name: "3-0",
-                logo: leicester
+                name: "Tie",
+                logo: premier
             },
             {
                 name: "Leicester City",
@@ -31,6 +32,156 @@ export const events = [
             }
         ],
         score: "3-0",
+        predictions: [
+            {
+                name: "Match Result",
+                tabs: [
+                    {
+                        name: "Regular Time",
+                        results: [
+                            {
+                                team: "Manchester United",
+                                logo: manchesterUnited,
+                                odds: "-175",
+                                trend: "negative"
+                            },
+                            {
+                                team: "Draw",
+                                logo: manchesterUnited,
+                                odds: "+350",
+                                trend: "positive"
+                            },
+                            {
+                                team: "Leicester City",
+                                logo: leicester,
+                                odds: "+480",
+                                trend: "positive"
+                            }
+                        ]
+                    },
+                    {
+                        name: "1st Half",
+                        results: [
+                            {
+                                team: "Manchester United",
+                                logo: manchesterUnited,                                
+                                odds: "+106",
+                                trend: "negative"
+                            },
+                            {
+                                team: "Draw",
+                                logo: manchesterUnited,                               
+                                odds: "+161",
+                                trend: "positive"
+                            },
+                            {
+                                team: "Leicester City",
+                                logo: leicester,
+                                odds: "+440",
+                                trend: "negative"
+                            }
+                        ]
+                    },
+                    {
+                        name: "2nd Half",
+                        results: [
+                            {
+                                team: "Manchester United",
+                                logo: manchesterUnited,                                
+                                odds: "-175",
+                                trend: "negative"
+                            },
+                            {
+                                team: "Draw",
+                                logo: manchesterUnited,    
+                                odds: "+350",
+                                trend: "positive"
+                            },
+                            {
+                                team: "Leicester City",
+                                logo: leicester,
+                                odds: "+480",
+                                trend: "positive"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                name: "Match Result",
+                tabs: [
+                    {
+                        name: "Regular Time",
+                        results: [
+                            {
+                                team: "Manchester United",
+                                logo: manchesterUnited,
+                                odds: "-175",
+                                trend: "negative"
+                            },
+                            {
+                                team: "Draw",
+                                logo: manchesterUnited,
+                                odds: "+350",
+                                trend: "positive"
+                            },
+                            {
+                                team: "Leicester City",
+                                logo: leicester,
+                                odds: "+480",
+                                trend: "positive"
+                            }
+                        ]
+                    },
+                    {
+                        name: "1st Half",
+                        results: [
+                            {
+                                team: "Manchester United",
+                                logo: manchesterUnited,                                
+                                odds: "+106",
+                                trend: "negative"
+                            },
+                            {
+                                team: "Draw",
+                                logo: manchesterUnited,                               
+                                odds: "+161",
+                                trend: "positive"
+                            },
+                            {
+                                team: "Leicester City",
+                                logo: leicester,
+                                odds: "+440",
+                                trend: "negative"
+                            }
+                        ]
+                    },
+                    {
+                        name: "2nd Half",
+                        results: [
+                            {
+                                team: "Manchester United",
+                                logo: manchesterUnited,                                
+                                odds: "-175",
+                                trend: "negative"
+                            },
+                            {
+                                team: "Draw",
+                                logo: manchesterUnited,    
+                                odds: "+350",
+                                trend: "positive"
+                            },
+                            {
+                                team: "Leicester City",
+                                logo: leicester,
+                                odds: "+480",
+                                trend: "positive"
+                            }
+                        ]
+                    }
+                ]
+            },
+        ],
         url: "https://www.youtube.com/embed/V1n0Da6zbeM"
     },
     // {
@@ -69,7 +220,7 @@ export const events = [
                 logo: liverpool
             }
         ],
-        score: "3-1",
+        score: "0-2",
         url: "https://www.youtube.com/embed/w3zQkhKImHk"
     }
 ];
