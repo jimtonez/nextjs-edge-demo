@@ -5,6 +5,7 @@ import Leagues from '../components/Topics'
 import Features from '../components/Features'
 import Header from '../components/Header'
 import Stack from '../components/Stack'
+import NavBar from '../components/NavBar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +20,7 @@ export default function Home() {
         <Leagues />
         <Stack />
       </div>
+      <NavBar />
     </main>
   )
 }
