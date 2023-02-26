@@ -5,6 +5,69 @@ import leicester from '../public/leicester.png'
 import liverpool from '../public/liverpool.png'
 import newcastle from '../public/newcastle.png'
 import premier from '../public/premier.webp'
+import { BanknotesIcon, RadioIcon, CodeBracketIcon } from '@heroicons/react/24/outline'
+
+export const sportsTypeTags = [
+    {
+        id: "soccer",
+        name: "Soccer",
+        icon: "⚽️"
+    },
+    {
+        id: "basketball",
+        name: "Basketball",
+        icon: "🏀"
+    },
+    {
+        id: "hockey",
+        name: "Hockey",
+        icon: "🏒"
+    },
+    {
+        id: "golf",
+        name: "Golf",
+        icon: "⛳️"
+    }
+]
+
+export const videoTypeTags = [
+    {
+        id: "upcoming",
+        name: "Upcoming"
+    },
+    {
+        id: "live",
+        name: "Live"
+    },
+    {
+        id: "replay",
+        name: "Replay"
+    }
+]
+
+export const navOptions = [
+    {
+        id: "events",
+        icon: RadioIcon,
+        name: "Events",
+        route: "/events"
+    },
+    {
+        id: "bets",
+        icon: BanknotesIcon,
+        name: "Bets",
+        route: "/bets"
+    },
+    {
+        id: "content",
+        icon: CodeBracketIcon,
+        name: "Content",
+        route: "/content"
+    },
+
+
+]
+
 
 export const events = [
     {

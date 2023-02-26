@@ -6,6 +6,18 @@ body {
   @apply bg-[#010202] h-screen;
 }
 
+.navIcon {
+  @apply w-8 h-8;
+}
+
+.navLink {
+  @apply flex items-center space-x-2 text-gray-700 hover:text-red-600;
+}
+
+.navContainer {
+  @apply flex lg:hidden fixed w-full bottom-0 z-40 justify-around p-7 bg-[#070D0D] shadow-md border-t border-gray-700;
+}
+
 /* :root {
   --max-width: 1100px;
   --border-radius: 12px;
