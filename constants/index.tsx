@@ -5,7 +5,7 @@ import leicester from '../public/leicester.png'
 import liverpool from '../public/liverpool.png'
 import newcastle from '../public/newcastle.png'
 import premier from '../public/premier.webp'
-import { BanknotesIcon, RadioIcon, CodeBracketIcon } from '@heroicons/react/24/outline'
+import { BanknotesIcon, RadioIcon, ClipboardDocumentIcon, ServerStackIcon } from '@heroicons/react/24/outline'
 
 export const sportsTypeTags = [
     {
@@ -59,13 +59,17 @@ export const navOptions = [
         route: "/bets"
     },
     {
+        id: "network",
+        icon: ServerStackIcon,
+        name: "Network",
+        route: "/network"
+    },
+    {
         id: "content",
-        icon: CodeBracketIcon,
+        icon: ClipboardDocumentIcon,
         name: "Content",
         route: "/content"
     },
-
-
 ]
 
 
