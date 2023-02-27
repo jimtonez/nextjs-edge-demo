@@ -7,7 +7,7 @@ body {
 }
 
 .navIcon {
-  @apply w-8 h-8;
+  @apply w-6 h-6 sm:w-8 sm:h-8;
 }
 
 .navLink {
@@ -15,7 +15,7 @@ body {
 }
 
 .navContainer {
-  @apply flex lg:hidden fixed w-full bottom-0 z-40 justify-around p-7 bg-[#070D0D] shadow-md border-t border-gray-700;
+  @apply flex lg:hidden fixed w-full bottom-0 z-40 justify-around p-5 sm:p-7 bg-[#070D0D] shadow-md border-t border-gray-700;
 }
 
 /* :root {

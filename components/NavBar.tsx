@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link"
 import { navOptions } from "@/constants"
-import { BanknotesIcon, CodeBracketIcon, RadioIcon } from "@heroicons/react/24/outline"
+import { BanknotesIcon, ServerStackIcon, RadioIcon, ClipboardDocumentIcon } from "@heroicons/react/24/outline"
 import { useSession } from "next-auth/react"
 
 function NavBar () {
@@ -17,9 +17,13 @@ function NavBar () {
             return (
                 <BanknotesIcon className="navIcon" />
             )
-        } else if (icon === CodeBracketIcon) {
+        } else if (icon === ServerStackIcon) {
             return (
-                <CodeBracketIcon className="navIcon" />
+                <ServerStackIcon className="navIcon" />
+            )
+        } else if (icon === ClipboardDocumentIcon) {
+            return (
+                <ClipboardDocumentIcon className="navIcon" />
             )
         }
      }
