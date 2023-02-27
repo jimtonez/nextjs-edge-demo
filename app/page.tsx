@@ -17,25 +17,25 @@ export default function Home() {
   const [leagues, setLeagues] = useState(null)
   const [isLoading, setIsLoading] = useState(false)
 
-  useEffect(() => {
-      setIsLoading(true)
-      fetch("https://v3.football.api-sports.io/teams?league=39&season=2022", {
-        "method": "GET",
-        "headers": {
-          "x-rapidapi-host": "v3.football.api-sports.io",
-          "x-rapidapi-key": "89b7bc16f57fa2a0a569559b00671513"
-        }
-      })
-      .then((res) => res.json())
-      .then((data) => {
-        setLeagues(data)
-        setIsLoading(false)
-        console.log(data)
-      })
-      .catch(err => {
-        console.log(err);
-      });
-  }, [])
+  // useEffect(() => {
+  //     setIsLoading(true)
+  //     fetch("https://v3.football.api-sports.io/teams?league=39&season=2022", {
+  //       "method": "GET",
+  //       "headers": {
+  //         "x-rapidapi-host": "v3.football.api-sports.io",
+  //         "x-rapidapi-key": ""
+  //       }
+  //     })
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       setLeagues(data)
+  //       setIsLoading(false)
+  //       console.log(data)
+  //     })
+  //     .catch(err => {
+  //       console.log(err);
+  //     });
+  // }, [])
 
   return (
     <main className='flex h-screen flex-col'>
