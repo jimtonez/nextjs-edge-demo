@@ -18,7 +18,7 @@ function Header () {
       <>
         <div className="bg-[#070D0D] shadow-md border-b border-gray-700 sticky top-0 z-50">
           <div className="flex justify-between max-w-7xl mx-1 lg:mx-auto">
-            <Link href={session ? '/' : "/"} className="p-4 flex items-center cursor-pointer relative">
+            <Link href={session ? '/' : "/"} className="p-2 flex items-center cursor-pointer relative">
               <span className="emoji" role="img" aria-label="rocket">⚽️</span>
               <p className="text-md text-white font-semibold pl-3">Edge Your Bets</p>
             </Link>
