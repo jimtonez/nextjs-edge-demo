@@ -5,7 +5,7 @@ import leicester from '../public/leicester.png'
 import liverpool from '../public/liverpool.png'
 import newcastle from '../public/newcastle.png'
 import premier from '../public/premier.webp'
-import { BanknotesIcon, RadioIcon, ClipboardDocumentIcon, ServerStackIcon } from '@heroicons/react/24/outline'
+import { UserCircleIcon, BanknotesIcon, CogIcon, RadioIcon, ClipboardDocumentIcon, ServerStackIcon } from '@heroicons/react/24/outline'
 
 export const sportsTypeTags = [
     {
@@ -33,14 +33,17 @@ export const sportsTypeTags = [
 export const videoTypeTags = [
     {
         id: "upcoming",
+        icon: "⌚️",
         name: "Upcoming"
     },
     {
         id: "live",
+        icon: "🏟️",
         name: "Live"
     },
     {
         id: "replay",
+        icon: "📽️",
         name: "Replay"
     }
 ]
@@ -70,6 +73,21 @@ export const navOptions = [
         name: "Content",
         route: "/content"
     },
+]
+
+export const accountOptions = [
+    {
+        id: "account",
+        icon: UserCircleIcon,
+        name: "Account",
+        route: "/account"
+    },
+    {
+        id: "settings",
+        icon: CogIcon,
+        name: "Settings",
+        route: "/settings"
+    }
 ]
 
 

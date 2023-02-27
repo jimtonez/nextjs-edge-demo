@@ -4,6 +4,7 @@ import proBowl from '../public/probowl.jpg'
 import { events } from "../constants"
 import { useState } from "react"
 import MatchResult from './predictions/soccer/MatchResult'
+import TabList from './TabList'
 
 function Events () {
 
@@ -21,9 +22,7 @@ function Events () {
 
     return (
     <section className="grid grid-cols-1 md:grid-cols-2 md:max-w-3xl lg:grid-cols-3 lg:max-w-5xl xl:grid-cols-4 xl:max-w-6xl mx-auto">
-        <div className='col-span-1 md:col-span-2 lg:col-span-3 xl:col-span-4 px-4 py-2'>
-            <p className='text-white text-base lg:text-xl font-semibold'>Events</p>
-        </div>
+        <TabList />
         <div className='col-span-1 md:col-span-2 lg:col-span-4 shadow-md'>
             <div className='flex flex-col lg:w-3/4 md:px-4'>
                 <ul className='list-none flex flex-col space-y-4'>
