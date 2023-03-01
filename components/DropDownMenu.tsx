@@ -5,7 +5,8 @@ import {
     UserCircleIcon,
     CogIcon,
     ArrowLeftOnRectangleIcon,
-    RadioIcon,
+    VideoCameraIcon,
+    TrophyIcon,
     BanknotesIcon,
     ServerStackIcon,
     ClipboardDocumentIcon,
@@ -22,14 +23,18 @@ export default function DropDownMenu() {
 
   const { data: session } = useSession();
   const renderButton = (icon: any) => {
-    if (icon === RadioIcon){
+    if (icon === TrophyIcon) {
         return (
-            <RadioIcon className="navIcon" />
+            <TrophyIcon className="navIcon" />
         )
     } else if (icon === BanknotesIcon) {
         return (
             <BanknotesIcon className="navIcon" />
         )
+    } else if (icon === VideoCameraIcon) {
+      return (
+          <VideoCameraIcon className="navIcon" />
+      )
     } else if (icon === ServerStackIcon) {
         return (
             <ServerStackIcon className="navIcon" />
@@ -70,9 +75,9 @@ export default function DropDownMenu() {
             leaveFrom="opacity-100 translate-y-0"
             leaveTo="opacity-0 translate-y-1"
           >
-            <Popover.Panel className="absolute z-10 transform -left-9 -translate-x-3/4 w-screen max-w-xs sm:px-0 mt-1">
+            <Popover.Panel className="absolute z-10 transform -left-9 -translate-x-3/4 w-screen max-w-xs sm:px-0 mt-[1px]">
               <div className="rounded-b-xl shadow-sm overflow-hidden">
-                <div className="relative z-20 grid gap-6 bg-[#070D0D] px-5 py-6 sm:gap-8 sm:p-8">
+                <div className="relative z-20 grid gap-6 bg-[#070D0D] p-6 md:p-8 sm:gap-8">
                     <ul role="list" className="space-y-6">
                         <>
                         {navOptions.map((navOption) => (
@@ -82,7 +87,7 @@ export default function DropDownMenu() {
                                 className="cursor-pointer -m-3 p-3 flex items-center gap-4 rounded-md text-base font-medium text-gray-700 hover:text-[#ff0000] hover:bg-gray-50 dark:hover:bg-opacity-5 transition ease-in-out duration-150"
                             >
                               {renderButton(navOption.icon)}
-                              <span className='text-sm sm:text-lg text-white font-normal'>{navOption.name}</span>
+                              <span className='text-md sm:text-lg text-white font-light'>{navOption.name}</span>
                           </Link>
                           </li>
                         ))}
@@ -96,7 +101,7 @@ export default function DropDownMenu() {
                                 className="cursor-pointer -m-3 p-3 flex items-center gap-4 rounded-md text-base font-medium text-gray-700 hover:text-[#ff0000] hover:bg-gray-50 dark:hover:bg-opacity-5 transition ease-in-out duration-150"
                             >
                               {renderButton(navOption.icon)}
-                              <span className='text-sm sm:text-lg text-white font-normal'>{navOption.name}</span>
+                              <span className='text-md sm:text-lg text-white font-light'>{navOption.name}</span>
                           </Link>
                           </li>
                         ))}
@@ -108,7 +113,7 @@ export default function DropDownMenu() {
                                 className="cursor-pointer -m-3 p-3 flex items-center gap-4 rounded-md text-base font-medium text-gray-700 hover:text-[#ff0000] hover:bg-gray-50 dark:hover:bg-opacity-5 transition ease-in-out duration-150"
                             >
                               {renderButton(ArrowLeftOnRectangleIcon)}
-                              <span className='text-sm sm:text-lg text-white font-normal'>Sign Out</span>
+                              <span className='text-md sm:text-lg text-white font-light'>Sign Out</span>
                           </Link>
                           </li>
                     </ul>

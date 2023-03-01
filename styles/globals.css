@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-[#010202] h-screen;
+  @apply bg-[#010202] h-screen scrollbar-hide;
 }
 
 .navIcon {
