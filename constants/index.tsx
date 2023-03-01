@@ -5,7 +5,10 @@ import leicester from '../public/leicester.png'
 import liverpool from '../public/liverpool.png'
 import newcastle from '../public/newcastle.png'
 import premier from '../public/premier.webp'
-import { UserCircleIcon, BanknotesIcon, CogIcon, RadioIcon, ClipboardDocumentIcon, ServerStackIcon } from '@heroicons/react/24/outline'
+import nhl from 'public/NHL-emblem.jpg'
+import ncaa from 'public/ncaa.png'
+import pga from 'public/pga.png'
+import { UserCircleIcon, BanknotesIcon, CogIcon, VideoCameraIcon, ClipboardDocumentIcon, ServerStackIcon, TrophyIcon } from '@heroicons/react/24/outline'
 
 export const sportsTypeTags = [
     {
@@ -50,16 +53,22 @@ export const videoTypeTags = [
 
 export const navOptions = [
     {
-        id: "events",
-        icon: RadioIcon,
-        name: "Events",
-        route: "/events"
+        id: "leagues",
+        icon: TrophyIcon,
+        name: "Leagues",
+        route: "/leagues"   
     },
     {
         id: "bets",
         icon: BanknotesIcon,
         name: "Bets",
         route: "/bets"
+    },
+    {
+        id: "events",
+        icon: VideoCameraIcon,
+        name: "Events",
+        route: "/events"
     },
     {
         id: "network",
@@ -459,3 +468,30 @@ export const events = [
         url: "https://www.youtube.com/embed/w3zQkhKImHk"
     }
 ];
+
+export const leagues = [
+    {
+        id: 1,
+        name: "Premier League",
+        logo: premier,
+        route: "/leagues/premier"
+    },
+    {
+        id: 2,
+        name: "NCAA",
+        logo: ncaa,
+        route: "/leagues/ncaa"
+    },
+    {
+        id: 3,
+        name: "NHL",
+        logo: nhl,
+        route: "/leagues/nhl"
+    },
+    {
+        id: 4,
+        name: "PGA",
+        logo: pga,
+        route: "/leagues/pga"
+    }
+]
