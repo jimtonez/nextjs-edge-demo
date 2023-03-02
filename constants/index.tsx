@@ -6,8 +6,6 @@ import liverpool from '../public/liverpool.png'
 import newcastle from '../public/newcastle.png'
 import premier from '../public/premier.webp'
 import nhl from 'public/NHL-emblem.jpg'
-import ncaa from 'public/ncaa.png'
-import pga from 'public/pga.png'
 import { UserCircleIcon, BanknotesIcon, CogIcon, VideoCameraIcon, ClipboardDocumentIcon, ServerStackIcon, TrophyIcon } from '@heroicons/react/24/outline'
 
 export const sportsTypeTags = [
@@ -25,11 +23,6 @@ export const sportsTypeTags = [
         id: "hockey",
         name: "Hockey",
         icon: "🏒"
-    },
-    {
-        id: "golf",
-        name: "Golf",
-        icon: "⛳️"
     }
 ]
 
@@ -278,18 +271,6 @@ export const events = [
         ],
         url: "https://www.youtube.com/embed/V1n0Da6zbeM"
     },
-    // {
-    //     id: "event-2",
-    //     title: "Relive Tiger Woods' best shots from Rd. 3 at Genesis Invitational | Golf Channel",
-    //     logo: golfch,
-    //     tags: [
-    //         {
-    //             name: "Golf",
-    //             icon: "⛳️"
-    //         },
-    //     ],
-    //     url: "https://www.youtube.com/embed/IORHuqDy9rs"
-    // },
     {
         id: "event-3",
         title: "Newcastle United v. Liverpool | PREMIER LEAGUE HIGHLIGHTS | 2/18/2023 | NBC Sports",
@@ -473,25 +454,19 @@ export const leagues = [
     {
         id: 1,
         name: "Premier League",
-        logo: premier,
+        logo: "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
         route: "/leagues/premier"
     },
     {
         id: 2,
-        name: "NCAA",
-        logo: ncaa,
+        name: "NCAA Basketball",
+        logo: "🏀",
         route: "/leagues/ncaa"
     },
     {
         id: 3,
         name: "NHL",
-        logo: nhl,
+        logo: "nhl",
         route: "/leagues/nhl"
     },
-    {
-        id: 4,
-        name: "PGA",
-        logo: pga,
-        route: "/leagues/pga"
-    }
 ]

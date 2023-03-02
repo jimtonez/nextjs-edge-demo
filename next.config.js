@@ -4,6 +4,9 @@ const nextConfig = {
   experimental: {
     outputStandalone: true,
     appDir: true
+  },
+  images: {
+    domains: ["media.api-sports.io"]
   }
 }
 
