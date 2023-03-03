@@ -12,7 +12,7 @@ function Leagues () {
             )
         } else {
             return (
-                <p className='text-9xl md:text-8xl'>{logo}</p>
+                <p className='text-8xl md:text-8xl'>{logo}</p>
             )
         } 
      }
@@ -30,7 +30,7 @@ function Leagues () {
                                 <p className="text-white text-md md:text-lg font-semibold">{league.name}</p>
                             </div>
                             <div className='flex items-center w-full h-full justify-center rounded-xl p-4'>
-                                <div className="flex w-48 h-48 md:h-36 md:w-36 rounded-xl bg-black items-center justify-center border border-red-600">
+                                <div className="flex w-36 h-36 md:h-36 md:w-36 rounded-xl bg-black items-center justify-center border border-red-600">
                                     {renderLogo(league.logo)}
                                 </div>
                             </div>

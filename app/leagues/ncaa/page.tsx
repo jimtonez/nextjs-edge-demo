@@ -4,7 +4,7 @@ import Teams from '../../../components/Teams'
 import Features from '../../../components/Features'
 import LeagueHeader from '@/components/LeagueHeader'
 import ncaa from '../../../public/ncaa.png'
-import StaticTeams from '../../../components/StaticTeams'
+import NCAATeams from '../../../components/NCAATeams'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,9 +13,8 @@ export default function NCAA() {
   return (
       <div className='space-y-4'>
         <LeagueHeader logo="🏀" name="NCAA Basketball" border="border-blue-300" />
-        {/* <Teams league="ncaa" /> */}
-        <StaticTeams league="ncaa" />
         <Features />
+        <NCAATeams />
         <Stack />
       </div>
   )
