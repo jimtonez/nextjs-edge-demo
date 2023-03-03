@@ -16,7 +16,7 @@ function NCAATeams () {
                             </div>
                             <div className='flex items-center w-full h-full justify-center rounded-xl'>
                                 <div className="flex h-36 w-36 xl:w-32 xl:h-32 aspect-h-2 items-center justify-center rounded-full">
-                                    <Image className="object-cover rounded-xl" src={team.logo} alt="" width={90} height={90} />
+                                    <Image priority className="object-cover rounded-xl" src={team.logo} alt="" width={90} height={90} />
                                 </div>
                             </div>
                         </div>
