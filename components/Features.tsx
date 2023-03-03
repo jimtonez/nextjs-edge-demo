@@ -9,7 +9,7 @@ function Features () {
                     <h2 className='text-2xl font-semibold'>Register for PREMIUM and get access to exclusive features!</h2>
                     <div className="flex flex-col items-start justify-between space-y-3">
                         <p className='text-md'>✅ Live sports on demand</p>
-                        <p className='text-md'>✅ Edge connectivity</p>
+                        <p className='text-md'>✅ Faster betting speeds at the edge</p>
                         <p className='text-md'>✅ Replay events and view archived data</p>
                     </div>
                     <div className="flex flex-row items-center justify-end">
