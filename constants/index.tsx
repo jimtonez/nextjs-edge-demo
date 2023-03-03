@@ -269,7 +269,7 @@ export const events = [
                 ]
             },
         ],
-        url: "https://www.youtube.com/embed/V1n0Da6zbeM"
+        url: "https://www.youtube.com/embed/V1n0Da6zbeM?mute=1"
     },
     {
         id: "event-3",
@@ -446,7 +446,7 @@ export const events = [
                 ]
             },
         ],
-        url: "https://www.youtube.com/embed/w3zQkhKImHk"
+        url: "https://www.youtube.com/embed/w3zQkhKImHk?mute=1"
     }
 ];
 
