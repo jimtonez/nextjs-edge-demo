@@ -17,7 +17,7 @@ function LeagueHeader ( league: League ) {
             )
         } else {
             return (
-                <p className='text-8xl md:text-9xl'>{logo}</p>
+                <p className='text-7xl md:text-8xl'>{logo}</p>
             )
         } 
      }
@@ -27,10 +27,10 @@ function LeagueHeader ( league: League ) {
             <div className={`col-span-1 md:col-span-2 lg:col-span-3 xl:col-span-4 space-y-4 border border-gray-700 hover:border-gray-600 border-dashed rounded-xl bg-[#070D0D]`}>
                 <div className="flex flex-row text-white rounded-xl rounded-r-none space-y-4 p-4">
                     <div className='flex items-start w-full h-full justify-start space-x-4'>
-                        <div className="flex w-36 h-36 md:h-48 md:w-48 rounded-xl bg-black items-center justify-center border border-red-600">
+                        <div className="flex w-28 h-28 md:w-36 md:h-36 rounded-xl bg-black items-center justify-center border border-red-600">
                             {renderLogo(league.logo)}
                         </div>
-                        <h1 className='text-3xl md:text-5xl font-bold'>{league.name}</h1>
+                        <h1 className='text-3xl md:text-5xl font-bold line-clamp-1'>{league.name}</h1>
                     </div>
                 </div>
             </div>

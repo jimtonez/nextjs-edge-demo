@@ -1,6 +1,6 @@
 import { Inter } from '@next/font/google'
 import { useEffect, useState } from 'react'
-import Events from '../../components/Events'
+import Features from '../../components/Features'
 import Stack from '../../components/Stack'
 import Leagues from '@/components/Topics'
 
@@ -12,6 +12,7 @@ export default function Home() {
     <main className='flex h-screen flex-col'>
       <div className='space-y-4'>
         <Leagues />
+        <Features />
         <Stack />
       </div>
     </main>

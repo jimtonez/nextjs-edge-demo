@@ -4,6 +4,7 @@ import Features from '@/components/Features'
 import Teams from '../../../components/Teams'
 import LeagueHeader from '@/components/LeagueHeader'
 import nhl from '../../../public/NHL-emblem.jpg'
+import NHLTeams from '@/components/NHLTeams'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,8 +13,8 @@ export default function NHL() {
   return (
       <div className='space-y-4'>
         <LeagueHeader logo="nhl" name="NHL" border="border-white" />
-        <Teams league="nhl" />
-        {/* <Features /> */}
+        <Features />
+        <NHLTeams />
         <Stack />
       </div>
   )
