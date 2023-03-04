@@ -98,7 +98,7 @@ function Events () {
                                                     <div className='flex flex-col w-auto h-full items-center justify-around p-1'>
                                                         {prediction.tabs?.map((tab, index) => (
                                                             <div key={tab.name} className='flex flex-col w-auto h-auto'>
-                                                                <MatchResult />
+                                                                <MatchResult number={150} />
                                                             </div>
                                                         ))}
                                                     </div>

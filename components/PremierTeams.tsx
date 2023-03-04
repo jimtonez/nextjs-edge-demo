@@ -7,6 +7,9 @@ function PremierTeams () {
 
     return (
         <section className="grid grid-cols-1 md:grid-cols-2 md:max-w-3xl lg:grid-cols-3 lg:max-w-5xl xl:grid-cols-4 xl:max-w-6xl mx-auto gap-4 px-2 lg:px-4">
+                <div className='col-span-1 md:col-span-2 lg:col-span-3 xl:col-span-4'>
+                    <p className='text-white text-base lg:text-xl font-semibold'>Teams</p>
+                </div>
                 <>
                 {teams.map((team, index) => (
                     <div key={team.team.id} className='flex col-span-1 aspect-w-3 aspect-h-2 cursor-pointer'>

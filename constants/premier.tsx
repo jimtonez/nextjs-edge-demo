@@ -400,3 +400,756 @@ export const teams = [
         }
     }
 ]
+
+export const events = [
+    {
+        "fixture": {
+            "id": 868196,
+            "referee": "C. Kavanagh",
+            "timezone": "UTC",
+            "date": "2023-03-04T15:00:00+00:00",
+            "timestamp": 1677942000,
+            "periods": {
+                "first": null,
+                "second": null
+            },
+            "venue": {
+                "id": 494,
+                "name": "Emirates Stadium",
+                "city": "London"
+            },
+            "status": {
+                "long": "Not Started",
+                "short": "NS",
+                "elapsed": null
+            }
+        },
+        "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https://media.api-sports.io/football/leagues/39.png",
+            "flag": "https://media.api-sports.io/flags/gb.svg",
+            "season": 2022,
+            "round": "Regular Season - 26"
+        },
+        "teams": {
+            "home": {
+                "id": 42,
+                "name": "Arsenal",
+                "logo": "https://media.api-sports.io/football/teams/42.png",
+                "winner": null
+            },
+            "away": {
+                "id": 35,
+                "name": "Bournemouth",
+                "logo": "https://media.api-sports.io/football/teams/35.png",
+                "winner": null
+            }
+        },
+        "goals": {
+            "home": null,
+            "away": null
+        },
+        "score": {
+            "halftime": {
+                "home": null,
+                "away": null
+            },
+            "fulltime": {
+                "home": null,
+                "away": null
+            },
+            "extratime": {
+                "home": null,
+                "away": null
+            },
+            "penalty": {
+                "home": null,
+                "away": null
+            }
+        },
+        "odds": {
+            "key": "h2h",
+            "last_update": "2023-03-04T02:12:40Z",
+            "home": -550,
+            "away": 1500,
+            "tie": 550
+        }
+    },
+    {
+        "fixture": {
+            "id": 868197,
+            "referee": "C. Pawson",
+            "timezone": "UTC",
+            "date": "2023-03-04T15:00:00+00:00",
+            "timestamp": 1677942000,
+            "periods": {
+                "first": null,
+                "second": null
+            },
+            "venue": {
+                "id": 495,
+                "name": "Villa Park",
+                "city": "Birmingham"
+            },
+            "status": {
+                "long": "Not Started",
+                "short": "NS",
+                "elapsed": null
+            }
+        },
+        "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https://media.api-sports.io/football/leagues/39.png",
+            "flag": "https://media.api-sports.io/flags/gb.svg",
+            "season": 2022,
+            "round": "Regular Season - 26"
+        },
+        "teams": {
+            "home": {
+                "id": 66,
+                "name": "Aston Villa",
+                "logo": "https://media.api-sports.io/football/teams/66.png",
+                "winner": null
+            },
+            "away": {
+                "id": 52,
+                "name": "Crystal Palace",
+                "logo": "https://media.api-sports.io/football/teams/52.png",
+                "winner": null
+            }
+        },
+        "goals": {
+            "home": null,
+            "away": null
+        },
+        "score": {
+            "halftime": {
+                "home": null,
+                "away": null
+            },
+            "fulltime": {
+                "home": null,
+                "away": null
+            },
+            "extratime": {
+                "home": null,
+                "away": null
+            },
+            "penalty": {
+                "home": null,
+                "away": null
+            }
+        },
+        "odds": {
+            "key": "h2h",
+            "last_update": "2023-03-04T02:12:40Z",
+            "home": -550,
+            "away": 1500,
+            "tie": 550
+        }
+    },
+    {
+        "fixture": {
+            "id": 868198,
+            "referee": "A. Taylor",
+            "timezone": "UTC",
+            "date": "2023-03-06T20:00:00+00:00",
+            "timestamp": 1678132800,
+            "periods": {
+                "first": null,
+                "second": null
+            },
+            "venue": {
+                "id": 10503,
+                "name": "Gtech Community Stadium",
+                "city": "Brentford, Middlesex"
+            },
+            "status": {
+                "long": "Not Started",
+                "short": "NS",
+                "elapsed": null
+            }
+        },
+        "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https://media.api-sports.io/football/leagues/39.png",
+            "flag": "https://media.api-sports.io/flags/gb.svg",
+            "season": 2022,
+            "round": "Regular Season - 26"
+        },
+        "teams": {
+            "home": {
+                "id": 55,
+                "name": "Brentford",
+                "logo": "https://media.api-sports.io/football/teams/55.png",
+                "winner": null
+            },
+            "away": {
+                "id": 36,
+                "name": "Fulham",
+                "logo": "https://media.api-sports.io/football/teams/36.png",
+                "winner": null
+            }
+        },
+        "goals": {
+            "home": null,
+            "away": null
+        },
+        "score": {
+            "halftime": {
+                "home": null,
+                "away": null
+            },
+            "fulltime": {
+                "home": null,
+                "away": null
+            },
+            "extratime": {
+                "home": null,
+                "away": null
+            },
+            "penalty": {
+                "home": null,
+                "away": null
+            }
+        },
+        "odds": {
+            "key": "h2h",
+            "last_update": "2023-03-04T02:12:40Z",
+            "home": -550,
+            "away": 1500,
+            "tie": 550
+        }
+    },
+    {
+        "fixture": {
+            "id": 868199,
+            "referee": "S. Attwell",
+            "timezone": "UTC",
+            "date": "2023-03-04T15:00:00+00:00",
+            "timestamp": 1677942000,
+            "periods": {
+                "first": null,
+                "second": null
+            },
+            "venue": {
+                "id": 508,
+                "name": "The American Express Community Stadium",
+                "city": "Falmer, East Sussex"
+            },
+            "status": {
+                "long": "Not Started",
+                "short": "NS",
+                "elapsed": null
+            }
+        },
+        "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https://media.api-sports.io/football/leagues/39.png",
+            "flag": "https://media.api-sports.io/flags/gb.svg",
+            "season": 2022,
+            "round": "Regular Season - 26"
+        },
+        "teams": {
+            "home": {
+                "id": 51,
+                "name": "Brighton",
+                "logo": "https://media.api-sports.io/football/teams/51.png",
+                "winner": null
+            },
+            "away": {
+                "id": 48,
+                "name": "West Ham",
+                "logo": "https://media.api-sports.io/football/teams/48.png",
+                "winner": null
+            }
+        },
+        "goals": {
+            "home": null,
+            "away": null
+        },
+        "score": {
+            "halftime": {
+                "home": null,
+                "away": null
+            },
+            "fulltime": {
+                "home": null,
+                "away": null
+            },
+            "extratime": {
+                "home": null,
+                "away": null
+            },
+            "penalty": {
+                "home": null,
+                "away": null
+            }
+        },
+        "odds": {
+            "key": "h2h",
+            "last_update": "2023-03-04T02:12:40Z",
+            "home": -550,
+            "away": 1500,
+            "tie": 550
+        }
+    },
+    {
+        "fixture": {
+            "id": 868200,
+            "referee": "M. Oliver",
+            "timezone": "UTC",
+            "date": "2023-03-04T15:00:00+00:00",
+            "timestamp": 1677942000,
+            "periods": {
+                "first": null,
+                "second": null
+            },
+            "venue": {
+                "id": 519,
+                "name": "Stamford Bridge",
+                "city": "London"
+            },
+            "status": {
+                "long": "Not Started",
+                "short": "NS",
+                "elapsed": null
+            }
+        },
+        "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https://media.api-sports.io/football/leagues/39.png",
+            "flag": "https://media.api-sports.io/flags/gb.svg",
+            "season": 2022,
+            "round": "Regular Season - 26"
+        },
+        "teams": {
+            "home": {
+                "id": 49,
+                "name": "Chelsea",
+                "logo": "https://media.api-sports.io/football/teams/49.png",
+                "winner": null
+            },
+            "away": {
+                "id": 63,
+                "name": "Leeds",
+                "logo": "https://media.api-sports.io/football/teams/63.png",
+                "winner": null
+            }
+        },
+        "goals": {
+            "home": null,
+            "away": null
+        },
+        "score": {
+            "halftime": {
+                "home": null,
+                "away": null
+            },
+            "fulltime": {
+                "home": null,
+                "away": null
+            },
+            "extratime": {
+                "home": null,
+                "away": null
+            },
+            "penalty": {
+                "home": null,
+                "away": null
+            }
+        },
+        "odds": {
+            "key": "h2h",
+            "last_update": "2023-03-04T02:12:40Z",
+            "home": -550,
+            "away": 1500,
+            "tie": 550
+        }
+    },
+    {
+        "fixture": {
+            "id": 868201,
+            "referee": "A. Madley",
+            "timezone": "UTC",
+            "date": "2023-03-05T16:30:00+00:00",
+            "timestamp": 1678033800,
+            "periods": {
+                "first": null,
+                "second": null
+            },
+            "venue": {
+                "id": 550,
+                "name": "Anfield",
+                "city": "Liverpool"
+            },
+            "status": {
+                "long": "Not Started",
+                "short": "NS",
+                "elapsed": null
+            }
+        },
+        "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https://media.api-sports.io/football/leagues/39.png",
+            "flag": "https://media.api-sports.io/flags/gb.svg",
+            "season": 2022,
+            "round": "Regular Season - 26"
+        },
+        "teams": {
+            "home": {
+                "id": 40,
+                "name": "Liverpool",
+                "logo": "https://media.api-sports.io/football/teams/40.png",
+                "winner": null
+            },
+            "away": {
+                "id": 33,
+                "name": "Manchester United",
+                "logo": "https://media.api-sports.io/football/teams/33.png",
+                "winner": null
+            }
+        },
+        "goals": {
+            "home": null,
+            "away": null
+        },
+        "score": {
+            "halftime": {
+                "home": null,
+                "away": null
+            },
+            "fulltime": {
+                "home": null,
+                "away": null
+            },
+            "extratime": {
+                "home": null,
+                "away": null
+            },
+            "penalty": {
+                "home": null,
+                "away": null
+            }
+        },
+        "odds": {
+                "key": "h2h",
+                "last_update": "2023-03-04T02:12:40Z",
+                "home": -550,
+                "away": 1500,
+                "tie": 550
+        }
+    },
+    {
+        "fixture": {
+            "id": 868202,
+            "referee": "S. Hooper",
+            "timezone": "UTC",
+            "date": "2023-03-04T12:30:00+00:00",
+            "timestamp": 1677933000,
+            "periods": {
+                "first": null,
+                "second": null
+            },
+            "venue": {
+                "id": 555,
+                "name": "Etihad Stadium",
+                "city": "Manchester"
+            },
+            "status": {
+                "long": "Not Started",
+                "short": "NS",
+                "elapsed": null
+            }
+        },
+        "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https://media.api-sports.io/football/leagues/39.png",
+            "flag": "https://media.api-sports.io/flags/gb.svg",
+            "season": 2022,
+            "round": "Regular Season - 26"
+        },
+        "teams": {
+            "home": {
+                "id": 50,
+                "name": "Manchester City",
+                "logo": "https://media.api-sports.io/football/teams/50.png",
+                "winner": null
+            },
+            "away": {
+                "id": 34,
+                "name": "Newcastle",
+                "logo": "https://media.api-sports.io/football/teams/34.png",
+                "winner": null
+            }
+        },
+        "goals": {
+            "home": null,
+            "away": null
+        },
+        "score": {
+            "halftime": {
+                "home": null,
+                "away": null
+            },
+            "fulltime": {
+                "home": null,
+                "away": null
+            },
+            "extratime": {
+                "home": null,
+                "away": null
+            },
+            "penalty": {
+                "home": null,
+                "away": null
+            }
+        },
+        "odds": {
+            "key": "h2h",
+            "last_update": "2023-03-04T02:12:40Z",
+            "home": -550,
+            "away": 1500,
+            "tie": 550
+        }
+    },
+    {
+        "fixture": {
+            "id": 868203,
+            "referee": "J. Brooks",
+            "timezone": "UTC",
+            "date": "2023-03-05T14:00:00+00:00",
+            "timestamp": 1678024800,
+            "periods": {
+                "first": null,
+                "second": null
+            },
+            "venue": {
+                "id": 566,
+                "name": "The City Ground",
+                "city": "Nottingham, Nottinghamshire"
+            },
+            "status": {
+                "long": "Not Started",
+                "short": "NS",
+                "elapsed": null
+            }
+        },
+        "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https://media.api-sports.io/football/leagues/39.png",
+            "flag": "https://media.api-sports.io/flags/gb.svg",
+            "season": 2022,
+            "round": "Regular Season - 26"
+        },
+        "teams": {
+            "home": {
+                "id": 65,
+                "name": "Nottingham Forest",
+                "logo": "https://media.api-sports.io/football/teams/65.png",
+                "winner": null
+            },
+            "away": {
+                "id": 45,
+                "name": "Everton",
+                "logo": "https://media.api-sports.io/football/teams/45.png",
+                "winner": null
+            }
+        },
+        "goals": {
+            "home": null,
+            "away": null
+        },
+        "score": {
+            "halftime": {
+                "home": null,
+                "away": null
+            },
+            "fulltime": {
+                "home": null,
+                "away": null
+            },
+            "extratime": {
+                "home": null,
+                "away": null
+            },
+            "penalty": {
+                "home": null,
+                "away": null
+            }
+        },
+        "odds": {
+            "key": "h2h",
+            "last_update": "2023-03-04T02:12:40Z",
+            "home": -550,
+            "away": 1500,
+            "tie": 550
+        }
+    },
+    {
+        "fixture": {
+            "id": 868204,
+            "referee": "R. Jones",
+            "timezone": "UTC",
+            "date": "2023-03-04T17:30:00+00:00",
+            "timestamp": 1677951000,
+            "periods": {
+                "first": null,
+                "second": null
+            },
+            "venue": {
+                "id": 585,
+                "name": "St. Mary's Stadium",
+                "city": "Southampton, Hampshire"
+            },
+            "status": {
+                "long": "Not Started",
+                "short": "NS",
+                "elapsed": null
+            }
+        },
+        "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https://media.api-sports.io/football/leagues/39.png",
+            "flag": "https://media.api-sports.io/flags/gb.svg",
+            "season": 2022,
+            "round": "Regular Season - 26"
+        },
+        "teams": {
+            "home": {
+                "id": 41,
+                "name": "Southampton",
+                "logo": "https://media.api-sports.io/football/teams/41.png",
+                "winner": null
+            },
+            "away": {
+                "id": 46,
+                "name": "Leicester",
+                "logo": "https://media.api-sports.io/football/teams/46.png",
+                "winner": null
+            }
+        },
+        "goals": {
+            "home": null,
+            "away": null
+        },
+        "score": {
+            "halftime": {
+                "home": null,
+                "away": null
+            },
+            "fulltime": {
+                "home": null,
+                "away": null
+            },
+            "extratime": {
+                "home": null,
+                "away": null
+            },
+            "penalty": {
+                "home": null,
+                "away": null
+            }
+        },
+        "odds": {
+            "key": "h2h",
+            "last_update": "2023-03-04T02:12:40Z",
+            "home": -550,
+            "away": 1500,
+            "tie": 550
+        }
+    },
+    {
+        "fixture": {
+            "id": 868205,
+            "referee": "T. Robinson",
+            "timezone": "UTC",
+            "date": "2023-03-04T15:00:00+00:00",
+            "timestamp": 1677942000,
+            "periods": {
+                "first": null,
+                "second": null
+            },
+            "venue": {
+                "id": 600,
+                "name": "Molineux Stadium",
+                "city": "Wolverhampton, West Midlands"
+            },
+            "status": {
+                "long": "Not Started",
+                "short": "NS",
+                "elapsed": null
+            }
+        },
+        "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https://media.api-sports.io/football/leagues/39.png",
+            "flag": "https://media.api-sports.io/flags/gb.svg",
+            "season": 2022,
+            "round": "Regular Season - 26"
+        },
+        "teams": {
+            "home": {
+                "id": 39,
+                "name": "Wolves",
+                "logo": "https://media.api-sports.io/football/teams/39.png",
+                "winner": null
+            },
+            "away": {
+                "id": 47,
+                "name": "Tottenham",
+                "logo": "https://media.api-sports.io/football/teams/47.png",
+                "winner": null
+            }
+        },
+        "goals": {
+            "home": null,
+            "away": null
+        },
+        "score": {
+            "halftime": {
+                "home": null,
+                "away": null
+            },
+            "fulltime": {
+                "home": null,
+                "away": null
+            },
+            "extratime": {
+                "home": null,
+                "away": null
+            },
+            "penalty": {
+                "home": null,
+                "away": null
+            }
+        },
+        "odds": {
+            "key": "h2h",
+            "last_update": "2023-03-04T02:12:40Z",
+            "home": -550,
+            "away": 1500,
+            "tie": 550
+        }
+    }
+]
