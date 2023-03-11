@@ -9,8 +9,8 @@ import { useSession } from 'next-auth/react'
 
 const inter = Inter({ subsets: ['latin'] })
 
-type PageProps = {
-    searchParams: { name: string, logo: string }
+interface PageProps {
+    searchParams?: { name: string, logo: string }
 }
 
 export default function Team ({ searchParams }: PageProps) {
@@ -20,8 +20,8 @@ export default function Team ({ searchParams }: PageProps) {
     const getEventsRef = useRef(false)
 
     const { data: session}  = useSession()
-    const name = searchParams.name
-    const logo = searchParams.logo
+    const name = searchParams!.name
+    const logo = searchParams!.logo
 
     const data = {
         name: name,
