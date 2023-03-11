@@ -1,9 +1,22 @@
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
 import { teams } from '@/constants/premier'
 import React, { useEffect, useState } from 'react'
 
+
 function PremierTeams () {
+
+    // const [teamData, setTeamData] = useState({ name: ''});
+
+    // const createQueryString = useCallback(
+    //     (name: string, value: string) => {
+    //       const params = new URLSearchParams(searchParams);
+    //       params.set(name, value);
+    
+    //       return params.toString();
+    //     },
+    //     [searchParams],
+    // );
 
     return (
         <section className="grid grid-cols-1 md:grid-cols-2 md:max-w-3xl lg:grid-cols-3 lg:max-w-5xl xl:grid-cols-4 xl:max-w-6xl mx-auto gap-4 px-2 lg:px-4">
@@ -12,7 +25,7 @@ function PremierTeams () {
                 </div>
                 <>
                 {teams.map((team, index) => (
-                    <div key={team.team.id} className='flex col-span-1 aspect-w-3 aspect-h-2 cursor-pointer'>
+                    <Link href={{ pathname: `/leagues/premier/teams/${encodeURIComponent(team.team.id)}`, query: { name: team.team.name, logo: team.team.logo } }} key={team.team.id} className='flex col-span-1 aspect-w-3 aspect-h-2 cursor-pointer'>
                         <div className="flex flex-col items-center justify-center border border-dashed border-gray-700 hover:border-gray-600 rounded-xl shadow-md">
                             <div className="flex bg-[#070D0D] border-b border-dashed border-gray-700 w-full h-1/4 items-center justify-center rounded-t-xl">
                                 <p className='text-white'>{team.team.name}</p>
@@ -23,7 +36,7 @@ function PremierTeams () {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </Link>
                 ))}
                 </>
         </section>

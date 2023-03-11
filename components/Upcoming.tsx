@@ -18,13 +18,13 @@ export type MatchType = {
 function Upcoming () {
 
     return (
-        <section className="grid grid-cols-1 lg:grid-cols-4 md:max-w-3xl lg:max-w-5xl xl:grid-cols-4 xl:max-w-6xl mx-auto gap-4 px-2 lg:px-4">
+        <section className="grid grid-cols-1 md:grid-cols-4 md:max-w-3xl lg:max-w-5xl xl:grid-cols-4 xl:max-w-6xl mx-auto gap-4 px-2 lg:px-4">
                 <>
-                <div className='col-span-1 lg:col-span-4'>
+                <div className='col-span-1 md:col-span-4'>
                     <p className='text-white text-base lg:text-xl font-semibold'>Upcoming Events</p>
                 </div>
                 {events.map((event, index) => (
-                    <div key={event.fixture.id} className='flex col-span-1 lg:col-span-2 aspect-w-3 aspect-h-2 cursor-pointer'>
+                    <div key={event.fixture.id} className='flex col-span-1 md:col-span-2 aspect-w-3 aspect-h-2 cursor-pointer'>
                         <div className="flex flex-col items-center justify-center border border-dashed border-gray-700 hover:border-gray-600 rounded-xl shadow-md">
                             <div className="flex bg-[#070D0D] border-b border-dashed border-gray-700 w-full h-1/4 items-center justify-center rounded-t-xl">
                                 <p className='text-white'>{event.teams.away.name} vs. {event.teams.home.name}</p>
