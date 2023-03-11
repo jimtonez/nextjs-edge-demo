@@ -1,17 +1,15 @@
 "use client"
 import { Inter } from '@next/font/google'
 import Stack from '../../../../../components/Stack'
-// import { events } from '@/constants/premier'
 import Features from '../../../../../components/Features'
 import TeamHeader from '@/components/TeamHeader'
 import { useEffect, useState, useRef } from 'react'
-import { useSearchParams } from 'next/navigation'
 import Upcoming from '../../../../../components/Upcoming'
 import { useSession } from 'next-auth/react'
 
 const inter = Inter({ subsets: ['latin'] })
 
-interface PageProps {
+type PageProps = {
     searchParams: { name: string, logo: string }
 }
 
