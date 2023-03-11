@@ -3,7 +3,6 @@ import { signIn } from 'next-auth/react'
 import nhl from '../public/NHL-emblem.jpg'
 
 interface TeamData {
-    id: number,
     logo: string
     name: string
 }
