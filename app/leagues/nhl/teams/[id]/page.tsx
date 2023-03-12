@@ -13,7 +13,7 @@ interface PageProps {
     searchParams?: { name: string, logo: string }
 }
 
-export default function PremierTeam ({ searchParams }: PageProps) {
+export default function NHLTeam ({ searchParams }: PageProps) {
 
     const [isLoading, setIsLoading] = useState(false)
     const [tabState, setTabState] = useState("upcoming")
@@ -35,7 +35,6 @@ export default function PremierTeam ({ searchParams }: PageProps) {
         <div className='col-span-1 md:col-span-2 lg:col-span-3 xl:col-span-4'>
             <div className="flex flex-row w-full items-center justify-start space-x-2 pb-2 md:pb-4 border-b border-gray-700">
                 <button onClick={() => setTabState("upcoming")} className={`${tabState === 'upcoming' ? 'bg-gray-600' : ''} text-sm  hover:bg-gray-600 text-white h-8 w-auto px-2 border border-gray-700 rounded-full`}>Upcoming Events</button>
-                {/* <button onClick={() => setTabState("teams")} className={`${tabState === 'teams' ? 'bg-gray-600' : ''} text-sm hover:bg-gray-600 text-white h-8 w-auto px-2 border border-gray-700 rounded-full`}>Teams</button> */}
             </div>
         </div>
         </section>

@@ -13,7 +13,7 @@ function LeagueHeader ( league: League ) {
     const renderLogo = (logo: any) => {
         if (logo === "nhl"){
             return (
-                <Image className="object-fill rounded-xl" src={nhl} alt="" />
+                <Image priority className="object-fill rounded-xl" src={nhl} alt="" />
             )
         } else {
             return (

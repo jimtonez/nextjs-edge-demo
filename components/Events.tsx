@@ -50,7 +50,7 @@ function Events () {
                                     <div className='hidden sm:flex flex-row w-full h-auto items-center space-x-2'>
                                         <div className='flex w-1/8'>
                                             <div className="flex h-12 lg:h-14 w-12 lg:w-14 rounded-full border border-red-600 border-2">
-                                                <Image src={event.logo} alt="" className="object-cover h-auto w-auto rounded-full" />
+                                                <Image priority src={event.logo} alt="" className="object-cover h-auto w-auto rounded-full" />
                                             </div>
                                         </div>
                                         <div className="flex w-7/8 text-white text-base md:text-lg font-normal md:font-semibold">
@@ -89,7 +89,7 @@ function Events () {
                                                     {event.teams.map((team, index) => (
                                                         <div key={team.name} className='flex w-full h-auto items-center p-1 space-x-4'>
                                                             <div className={`w-10 sm:w-12 h-10 sm:h-12 rounded-full border-2 border-red-600`}>
-                                                                <Image src={team.logo} alt="" className="object-cover text-white h-auto w-auto rounded-full" />
+                                                                <Image priority src={team.logo} alt="" className="object-cover text-white h-auto w-auto rounded-full" />
                                                             </div>
                                                             <p className='hidden sm:flex sm:line-clamp-1 text-white'>{team.name}</p>
                                                         </div>

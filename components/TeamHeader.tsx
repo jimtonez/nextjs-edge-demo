@@ -16,7 +16,7 @@ function TeamHeader (team: TeamData) {
                     <div className='flex items-start w-full h-full justify-start space-x-4'>
                         <div className='flex xs:w-1/3'>
                         <div className="flex w-28 h-28 md:w-36 md:h-36 rounded-xl bg-black items-center justify-center border border-red-600">
-                            <Image className="object-fill rounded-xl" src={team.logo} alt="" width={90} height={90} />
+                            <Image priority className="object-fill rounded-xl" src={team.logo} alt="" width={90} height={90} />
                         </div>
                         </div>
                         <div className='flex xs:w-2/3'>
