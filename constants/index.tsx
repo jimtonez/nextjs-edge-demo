@@ -49,7 +49,7 @@ export const navOptions = [
         id: "leagues",
         icon: TrophyIcon,
         name: "Leagues",
-        route: "/leagues"   
+        route: "/leagues"  
     },
     {
         id: "bets",
