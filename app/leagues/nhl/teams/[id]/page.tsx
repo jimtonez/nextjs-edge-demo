@@ -1,5 +1,6 @@
 "use client"
 import { Inter } from '@next/font/google'
+import { useRouter } from 'next/navigation'
 import Stack from '../../../../../components/Stack'
 import Features from '../../../../../components/Features'
 import TeamHeader from '@/components/TeamHeader'
@@ -27,6 +28,13 @@ export default function NHLTeam ({ searchParams }: PageProps) {
         name: name,
         logo: logo
     }
+
+
+    const pathname = useRouter();
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
 
   return (
       <div className='space-y-4'>

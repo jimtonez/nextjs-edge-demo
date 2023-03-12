@@ -1,7 +1,7 @@
 "use client"
 import { Inter } from '@next/font/google'
 import Stack from '../../../components/Stack'
-// import { events } from '@/constants/premier'
+import { useRouter } from 'next/navigation'
 import Leagues from '../../../components/Topics'
 import Features from '../../../components/Features'
 import LeagueHeader from '@/components/LeagueHeader'
@@ -44,6 +44,12 @@ export default function Premier() {
         getEventsRef.current = true;
         fetchUpcmoming()
     },[])
+
+    const pathname = useRouter();
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
 
   return (
       <div className='space-y-4'>

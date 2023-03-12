@@ -4,6 +4,7 @@ import Stack from '../../../../../components/Stack'
 import Features from '../../../../../components/Features'
 import TeamHeader from '@/components/TeamHeader'
 import { useEffect, useState, useRef } from 'react'
+import { useRouter } from 'next/navigation'
 import Upcoming from '../../../../../components/Upcoming'
 import { useSession } from 'next-auth/react'
 
@@ -27,6 +28,12 @@ export default function PremierTeam ({ searchParams }: PageProps) {
         name: name,
         logo: logo
     }
+
+    const pathname = useRouter();
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
 
   return (
       <div className='space-y-4'>

@@ -2,6 +2,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { useSession } from 'next-auth/react'
 import { Inter } from '@next/font/google'
+import { useRouter } from 'next/navigation'
 import Stack from '../../../components/Stack'
 import Features from '@/components/Features'
 import Upcoming from '../../../components/Upcoming'
@@ -41,6 +42,12 @@ export default function NHL() {
       getEventsRef.current = true;
       fetchUpcmoming()
   },[])
+
+    const pathname = useRouter();
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
 
   return (
       <div className='space-y-4'>
