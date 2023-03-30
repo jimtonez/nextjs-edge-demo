@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import { getServerSession } from "next-auth"
 import AuthContext from './AuthContext'
+import { RecoilRoot } from 'recoil'
 
 export default async function RootLayout({
   children
@@ -19,7 +20,7 @@ export default async function RootLayout({
       <head />
       <body>
         <AuthContext session={session}>
-        {children}
+            {children}
         </AuthContext>
       </body>
     </html>

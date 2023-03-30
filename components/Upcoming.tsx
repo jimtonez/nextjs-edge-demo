@@ -1,7 +1,9 @@
+"use client"
 import Image from 'next/image'
 import Link from 'next/link'
 import { events } from '@/constants/premier'
 import MatchResult from './predictions/soccer/MatchResult'
+import { RecoilRoot } from 'recoil'
 
 export type MatchType = {
     id: number,
@@ -36,20 +38,20 @@ function Upcoming () {
                                             <Image src={event.teams.home.logo} alt="" className="object-cover w-auto h-auto text-white rounded-full" height={50} width={50} />
                                         </div>
                                         <p className='flex sm:line-clamp-1 text-white'>{event.teams.home.name}</p>
-                                        <MatchResult number={event.odds.home} />
+                                        <MatchResult event_id={event.teams.away.name + " vs. " + event.teams.home.name} strike={event.odds.home} />
                                     </div>
                                     <div  className='flex flex-row w-full h-1/3 items-center justify-between'>
                                         <div className={`w-12 sm:w-16 h-12 sm:h-16 md:h-10 md:w-10 lg:h-16 lg:w-16 rounded-full border-2 border-red-600`}>
                                         </div>
                                         <p className='flex sm:line-clamp-1 text-white'>Tie</p>
-                                        <MatchResult number={event.odds.tie} />
+                                        <MatchResult event_id={event.teams.away.name + " vs. " + event.teams.home.name} strike={event.odds.tie} />
                                     </div>
                                     <div  className='flex flex-row w-full h-1/3 items-center justify-between'>
                                         <div className={`w-12 sm:w-16 h-12 sm:h-16 md:h-10 md:w-10 lg:h-16 lg:w-16 rounded-full border-2 border-red-600`}>
                                             <Image priority src={event.teams.away.logo} alt="" className="object-cover w-auto h-auto text-white rounded-full" height={50} width={50} />
                                         </div>
                                         <p className='flex sm:line-clamp-1 text-white'>{event.teams.away.name}</p>
-                                        <MatchResult number={event.odds.away} />
+                                            <MatchResult event_id={event.teams.away.name + " vs. " + event.teams.home.name} strike={event.odds.away} />
                                     </div>
                                 </div>
                             </div>

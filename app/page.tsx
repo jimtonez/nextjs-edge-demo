@@ -10,14 +10,16 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
 
   return (
+    
     <main className='flex h-screen flex-col overflow-y-scroll scrollbar-hide'>
       <Header />
       <div className='space-y-4'>
-        <Features />
+        {/* <Features /> */}
         <Leagues />
         <Stack />
       </div>
       <NavBar />
     </main>
+    
   )
 }

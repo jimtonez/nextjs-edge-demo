@@ -37,3 +37,6 @@ next-env.d.ts
 
 # JSON Scatch Page
 upcoming.json
+
+# Backend
+/backend

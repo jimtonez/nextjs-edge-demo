@@ -1,13 +1,14 @@
 "use client"
-
 import { FcGoogle } from "react-icons/fc"
-import { getProviders, signIn } from "next-auth/react"
+import { getProviders, signIn, useSession } from "next-auth/react"
 
 type Props = {
     providers: Awaited<ReturnType<typeof getProviders>>;
 }
 
 function SignInComponent({ providers }: Props) {
+
+    const { data: session, status } = useSession()
 
     return (
         <div className="mx-auto py-12 px-6 sm:p-20 xl:w-10/12">
@@ -31,7 +32,7 @@ function SignInComponent({ providers }: Props) {
         <div role="hidden" className="mt-12 border-t border-gray-700">
             <span className="block w-max mx-auto -mt-3 px-4 text-center text-gray-700 bg-[#070D0D]">Or</span>
         </div>
-        <form action="" className="space-y-6 py-6 text0white">
+        <form action="" className="space-y-6 py-6 text-white">
           <div>
             <input 
               type="email" 

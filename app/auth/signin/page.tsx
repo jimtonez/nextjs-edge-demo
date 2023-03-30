@@ -1,5 +1,4 @@
-import { getProviders, signIn } from "next-auth/react";
-import Head from "next/head";
+import { getProviders } from "next-auth/react";
 import SignInComponent from './SignInComponent'
 
 async function SignIn() {

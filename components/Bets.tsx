@@ -4,10 +4,35 @@ import { signIn, useSession } from 'next-auth/react'
 import { events } from '@/constants/premier'
 import Bet from './Bet'
 import TabList from './TabList'
+import { KafkaStreams } from 'kafka-streams'
+import { useEffect } from 'react'
+import Kafka from 'node-rdkafka'
 
 function Bets () {
 
     const { data: session } = useSession()
+
+    const fetchBets = async () => {
+
+        const res = await fetch(`/api/bets/bets`);
+        const data = await res.json();
+      console.log(data)
+    }
+      
+    useEffect(() => {
+        // fetchBets()
+    },[])
+
+    // const consumer = new Kafka.KafkaConsumer({
+    //     "metadata.broker.list": "localhost:9092",
+    //     "group.id": "kafka-streams-test-native",
+    // }, {})
+
+    // consumer.on('ready', () => {
+    //     console.log('consumer ready...');
+    //     consumer.subscribe(['test']);
+    //     consumer.consume();
+    // })
 
     return (
         <section className="grid grid-cols-1 md:grid-cols-4 md:max-w-3xl lg:max-w-5xl xl:grid-cols-4 xl:max-w-6xl mx-auto p-2 lg:p-4 gap-4">
