@@ -6,6 +6,13 @@ import { paymentState } from '@/atoms/paymentAtom';
 import { XMarkIcon, TrophyIcon, CheckCircleIcon } from '@heroicons/react/24/outline';
 import { signIn, useSession } from 'next-auth/react'
 
+interface Bet {   
+    id: string,
+    strike: number,
+    event_id: string,
+    bet_amt: number
+}
+
 function BetSlip () {
 
     const [openBetSlip, setOpenBetSlip] = useRecoilState(betSlipState)
