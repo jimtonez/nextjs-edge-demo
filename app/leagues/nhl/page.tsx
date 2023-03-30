@@ -5,10 +5,12 @@ import { Inter } from '@next/font/google'
 import { useRouter } from 'next/navigation'
 import Stack from '../../../components/Stack'
 import Features from '@/components/Features'
+import BetSlip from '../../../components/BetSlip'
 import Upcoming from '../../../components/Upcoming'
 import LeagueHeader from '@/components/LeagueHeader'
 import nhl from '../../../public/NHL-emblem.jpg'
 import NHLTeams from '@/components/NHLTeams'
+import { RecoilRoot } from 'recoil'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -50,7 +52,9 @@ export default function NHL() {
     }, [pathname]);
 
   return (
+    <RecoilRoot>
       <div className='space-y-4'>
+        <BetSlip />
         <LeagueHeader logo="nhl" name="NHL" border="border-purple-700" />
         <section className="grid grid-cols-1 md:grid-cols-2 md:max-w-3xl lg:grid-cols-3 lg:max-w-5xl xl:grid-cols-4 xl:max-w-6xl mx-auto gap-4 px-2 lg:px-4 mt-4">
         <div className='col-span-1 md:col-span-2 lg:col-span-3 xl:col-span-4'>
@@ -73,5 +77,6 @@ export default function NHL() {
         )}
         <Stack />
       </div>
+      </RecoilRoot>
   )
 }
