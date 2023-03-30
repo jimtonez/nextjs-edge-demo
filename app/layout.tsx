@@ -1,7 +1,7 @@
 import '../styles/globals.css'
-import { getServerSession } from "next-auth"
+import { getServerSession } from "next-auth/next"
 import AuthContext from './AuthContext'
-import { RecoilRoot } from 'recoil'
+import { authOptions } from "@/pages/api/auth/[...nextauth]";
 
 export default async function RootLayout({
   children
@@ -9,7 +9,7 @@ export default async function RootLayout({
   children: React.ReactNode
 }) {
 
-  const session = await getServerSession();
+  const session = await getServerSession(authOptions);
 
   return (
     <html lang="en">
