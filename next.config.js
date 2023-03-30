@@ -7,7 +7,7 @@ const nextConfig = {
   },
   images: {
     domains: ["media.api-sports.io", "lh3.googleusercontent.com"]
-  }
+  },
 }
 
 module.exports = nextConfig

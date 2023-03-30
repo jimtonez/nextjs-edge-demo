@@ -1,9 +1,8 @@
 "use client"
-import { signIn, signOut} from "next-auth/react";
-import { useSession } from "next-auth/react";
-import { useState, useEffect } from "react";
+import { signIn, useSession } from "next-auth/react";
 import DropDownMenu from "./DropDownMenu"
 import Link from 'next/link'
+import { redirect } from "next/dist/server/api-utils";
 
 function Header () {
 
@@ -22,7 +21,7 @@ function Header () {
               <span className="emoji" role="img" aria-label="rocket">⚽️</span>
               <p className="text-md text-white font-semibold pl-3">Edge Your Bets</p>
             </Link>
-            <div className="flex items-center justify-end space-x-2 md:space-x-4">
+            <div className="flex items-center justify-center space-x-2 md:space-x-4">
               {session ? (
                   <>
                   <DropDownMenu />
@@ -30,7 +29,9 @@ function Header () {
               ) : (
                 <>
                 <div className="flex space-x-2 p-2">
-                  <button onClick={handleSignin} className="text-sm text-gray-600 hover:bg-gray-600 hover:text-white h-8 w-20 border border-gray-600 hover:border-none rounded-full">Register</button>
+                  <Link href="/auth/register" className="flex items-center justify-center text-sm text-gray-600 hover:text-white hover:bg-gray-600 h-8 w-20 border border-gray-600 hover:border-none rounded-full">
+                    <p>Register</p>
+                  </Link>
                   <button onClick={handleSignin} className="text-sm text-red-600 hover:bg-red-600 hover:text-white h-8 w-16 border border-red-600 hover:border-none rounded-full">Sign In</button>
                 </div>
                 </>

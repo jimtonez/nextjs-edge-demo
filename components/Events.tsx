@@ -5,6 +5,9 @@ import { events } from "../constants"
 import { useState } from "react"
 import MatchResult from './predictions/soccer/MatchResult'
 import TabList from './TabList'
+import BetSlip from './BetSlip'
+import { RecoilRoot } from 'recoil'
+
 
 function Events () {
 
@@ -21,7 +24,9 @@ function Events () {
     }
 
     return (
+    <RecoilRoot>
     <section className="grid grid-cols-1 md:grid-cols-2 md:max-w-3xl lg:grid-cols-3 lg:max-w-5xl xl:grid-cols-4 xl:max-w-6xl mx-auto">
+        <BetSlip />
         <TabList />
         <div className='col-span-1 md:col-span-2 lg:col-span-4 shadow-md'>
             <div className='flex flex-col lg:w-3/4 md:px-4'>
@@ -97,8 +102,8 @@ function Events () {
                                                     </div>
                                                     <div className='flex flex-col w-auto h-full items-center justify-around p-1'>
                                                         {prediction.tabs?.map((tab, index) => (
-                                                            <div key={tab.name} className='flex flex-col w-auto h-auto'>
-                                                                <MatchResult number={150} />
+                                                            <div key={index} className='flex flex-col w-auto h-auto'>
+                                                                <MatchResult strike={150} event_id={event.title} />
                                                             </div>
                                                         ))}
                                                     </div>
@@ -114,6 +119,7 @@ function Events () {
             </div>     
         </div>
     </section>
+    </RecoilRoot>
     )
 
 }
