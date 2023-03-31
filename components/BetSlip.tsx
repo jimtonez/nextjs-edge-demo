@@ -39,9 +39,9 @@ function BetSlip () {
     }
 
     return (
-        <div className={`flex flex-col items-start justify-center bottom-0 lg:top-0 right-0 w-full lg:w-[33vw] h-[125vw] sm:h-[100vw] md:h-[72vw] lg:h-full bg-[#070D0D] border-t lg:border-l border-gray-700 lg:p-4 space-y-4 text-white fixed h-full z-40 ease-in-out duration-300 ${openBetSlip ? "translate-x-0 " : "translate-x-full"}`}>
-            <div className="flex relative w-full h-28 flex-row items-center justify-center lg:mt-12 border-b border-gray-700 p-4 lg:p-0">
-                <div onClick={() => setOpenBetSlip(false)} className="flex absolute left-1 top-1 h-14 w-14 items-center justify-center rounded-full border border-gray-700 border-dashed cursor-pointer">
+        <div className={`flex flex-col items-start justify-center bottom-0 md:top-12 right-0 w-full h-[120vw] md:w-[33vw] md:h-full bg-[#070D0D] border-t md:border-l border-gray-700 lg:p-4 space-y-4 text-white fixed h-full z-40 ease-in-out duration-300 ${openBetSlip ? "translate-x-0 " : "translate-x-full"}`}>
+            <div className="flex relative w-full h-32 flex-row items-center justify-center border-b border-gray-700 p-4 lg:p-0">
+                <div onClick={() => setOpenBetSlip(false)} className="flex absolute left-1 top-1 md:top-2 h-14 w-14 items-center justify-center rounded-full border border-gray-700 border-dashed cursor-pointer">
                     <XMarkIcon className="text-red-600 h-12 w-12" />
                 </div>
                 <h2 className="text-3xl font-bold text-gray-700">Bet Slip</h2>
@@ -54,7 +54,7 @@ function BetSlip () {
                             <div onClick={() => deleteBet(i)} className="flex absolute right-1 top-1 h-10 w-10 items-center justify-center rounded-full border border-gray-700 border-dashed cursor-pointer">
                                 <XMarkIcon className="text-red-600 h-8 w-8" />
                             </div>
-                            <div className="flex w-3/4 line-clamp-1 px-4">
+                            <div className="flex w-3/4 line-clamp-1 pr-4">
                                 <p className=''>{bet.event_id}</p>
                             </div>
                         </div>
@@ -65,7 +65,7 @@ function BetSlip () {
                                     <TrophyIcon className="text-red-600 h-8 w-8" />
                                 </div>
                             </div>
-                            <div className="flex w-full h-2/3 flex-row items-center justify-around pb-2">
+                            <div className="flex w-full h-[200px] flex-row items-center justify-around pb-2">
                                 <h2>{bet.strike}</h2>
                                 <h2>{bet.bet_amt}</h2>
                             </div>
@@ -74,11 +74,11 @@ function BetSlip () {
                 ))}
                 </>
             </div>
-            <div role="hidden" className="flex flex-col w-full h-[200px] items-center justify-around border-t border-gray-700 mt-4">
+            <div role="hidden" className="flex flex-col w-full h-[200px] md:h-[250px] lg:h-[200px] items-center justify-around border-t border-gray-700">
                 
-                <div className="flex flex-col items-center justify-around w-full h-[200px]">
+                <div className="flex flex-col items-center justify-center w-full h-[200px] md:h-[250px]">
                     {session ? (
-                        <div className='flex flex-col w-full h-full items-center justify-evenly'>
+                        <div className='flex flex-col w-full pb-16 sm:pb-24 md:pb-32 lg:pb-8 md:h-full items-center justify-center space-y-4'>
                             <>
                             {payment ? (
                                 <CheckCircleIcon className='text-green-400 animate-pulse' />
@@ -92,7 +92,7 @@ function BetSlip () {
                         </div>
  
                     ) : (
-                        <div className='flex flex-col w-full h-full items-center justify-evenly'>
+                        <div className='flex flex-col w-full pb-4 md:pb-12 md:h-full items-center justify-center space-y-4'>
                             <span className="text-center text-gray-700 bg-[#070D0D]">Sign in to place your bets</span>
                             <div className="flex flex-row items-center justify-center space-x-2 w-36 h-14 border border-red-600 bg-inherit hover:bg-black animate-pulse hover:animate-none cursor-pointer rounded-full" onClick={(e) => handleSignin(e)}>
                                 <p className="text-white">Sign In</p>

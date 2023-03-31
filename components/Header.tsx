@@ -2,7 +2,6 @@
 import { signIn, useSession } from "next-auth/react";
 import DropDownMenu from "./DropDownMenu"
 import Link from 'next/link'
-import { redirect } from "next/dist/server/api-utils";
 
 function Header () {
 
