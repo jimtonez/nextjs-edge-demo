@@ -8,13 +8,13 @@ export const containers = [
     {
         name: "Quarkus",
         image: "ed-quarkusapp",
-        description: "Back-end microservice for handling server-side API requests to the database",
+        description: "Back-end microservice for handling server-side API requests to the database.",
         logo: "quarkus"
     },
     {
         name: "Postgres",
         image: "ed-postgres",
-        description: "Containerized database microservice",
+        description: "Containerized database microservice.",
         logo: "postgres"
     },
     {
