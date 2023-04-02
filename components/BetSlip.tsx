@@ -69,8 +69,8 @@ function BetSlip () {
                             <div onClick={() => deleteBet(i)} className="flex absolute right-1 top-1 h-10 w-10 items-center justify-center rounded-full border border-gray-700 border-dashed cursor-pointer">
                                 <XMarkIcon className="text-red-600 h-8 w-8" />
                             </div>
-                            <div className="flex items-center justify-center w-3/4 line-clamp-1 pr-4">
-                                <p className=''>{bet.event_id}</p>
+                            <div className="flex items-center justify-center w-3/4 pr-4">
+                                <p className='line-clamp-1'>{bet.event_id}</p>
                             </div>
                         </div>
                         <div className="flex flex-col w-full h-[175px] items-center p-4">
