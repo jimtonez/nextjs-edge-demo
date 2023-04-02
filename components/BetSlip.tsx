@@ -51,7 +51,7 @@ function BetSlip () {
 
     return (            
         <>
-        <div className={`${bets.length > 0 ? 'flex fixed' : 'hidden'} flex-col items-center justify-center lg:top-16 lg:h-[200px] right-5 md:right-12 lg:pr-8 xl:pr-36 bottom-20 sm:bottom-28 z-10`}>
+        <div className={`${bets.length > 0 ? 'flex fixed' : 'hidden'} flex-col items-center justify-center lg:top-16 lg:h-[200px] right-6 sm:right-12 md:right-16 lg:pr-8 xl:pr-36 bottom-20 sm:bottom-28 z-10`}>
             {renderBetsButton()}
         </div>
         <div className={`flex flex-col items-start justify-center bottom-0 right-0 w-full h-full md:w-[33vw] md:h-full bg-[#070D0D] border-t md:border-l border-gray-700 lg:p-4 space-y-4 text-white fixed h-full z-20 lg:z-40 ease-in-out duration-300 ${openBetSlip ? "translate-x-0 " : "translate-x-full"}`}>
@@ -65,7 +65,7 @@ function BetSlip () {
                 <>
                 {bets.map((bet, i) => (
                     <div key={i} className={`flex-col w-full h-[200px] items-center justify-center border border-gray-700 rounded-xl ease-in-out duration-200 ${i+1 === bets.length ? 'mb-12' : 'mb-0'}`}>
-                        <div className="flex relative w-full h-[50px] items-center justify-center border-b border-gray-700">
+                        <div className="flex relative w-full h-1/4 items-center justify-center border-b border-gray-700">
                             <div onClick={() => deleteBet(i)} className="flex absolute right-1 top-1 h-10 w-10 items-center justify-center rounded-full border border-gray-700 border-dashed cursor-pointer">
                                 <XMarkIcon className="text-red-600 h-8 w-8" />
                             </div>
