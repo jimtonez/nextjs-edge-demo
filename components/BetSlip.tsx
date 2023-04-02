@@ -3,7 +3,7 @@ import { useRecoilState } from 'recoil';
 import { betSlipState } from '@/atoms/betSlipAtom';
 import { betsState } from '@/atoms/betsAtom';
 import { paymentState } from '@/atoms/paymentAtom';
-import { XMarkIcon, TrophyIcon, CheckCircleIcon } from '@heroicons/react/24/outline';
+import { XMarkIcon, TrophyIcon, CheckCircleIcon, BanknotesIcon } from '@heroicons/react/24/outline';
 import { signIn, useSession } from 'next-auth/react'
 
 interface Bet {   
@@ -38,9 +38,24 @@ function BetSlip () {
         signIn()
     }
 
-    return (
-        <div className={`flex flex-col items-start justify-center bottom-0 md:top-12 right-0 w-full h-[120vw] md:w-[33vw] md:h-full bg-[#070D0D] border-t md:border-l border-gray-700 lg:p-4 space-y-4 text-white fixed h-full z-40 ease-in-out duration-300 ${openBetSlip ? "translate-x-0 " : "translate-x-full"}`}>
-            <div className="flex relative w-full h-32 flex-row items-center justify-center border-b border-gray-700 p-4 lg:p-0">
+    const renderBetsButton = () => {
+        if (bets.length > 0) {
+            return (
+                <div onClick={() => setOpenBetSlip(true)} className='flex flex-col items-center justify-center h-20 w-20 rounded-full bg-red-600 shadow-sm shadow-red-600 animate-pulse hover:animate-none cursor-pointer ease-in duration-200 hover:scale-105'>
+                    <p className='text-xs font-bold'>{bets.length}</p>
+                    <BanknotesIcon className='text-black h-10 w-10' />
+                </div>
+            )
+        }
+    }
+
+    return (            
+        <>
+        <div className={`${bets.length > 0 ? 'flex fixed' : 'hidden'} flex-col items-center justify-center lg:top-16 lg:h-[200px] right-5 md:right-12 lg:pr-8 xl:pr-36 bottom-20 sm:bottom-28 z-10`}>
+            {renderBetsButton()}
+        </div>
+        <div className={`flex flex-col items-start justify-center bottom-0 right-0 w-full h-full md:w-[33vw] md:h-full bg-[#070D0D] border-t md:border-l border-gray-700 lg:p-4 space-y-4 text-white fixed h-full z-20 lg:z-40 ease-in-out duration-300 ${openBetSlip ? "translate-x-0 " : "translate-x-full"}`}>
+            <div className="flex relative w-full h-32 flex-row items-center justify-center border-b border-gray-700 p-4 lg:p-0 mt-14 md:mt-12">
                 <div onClick={() => setOpenBetSlip(false)} className="flex absolute left-1 top-1 md:top-2 h-14 w-14 items-center justify-center rounded-full border border-gray-700 border-dashed cursor-pointer">
                     <XMarkIcon className="text-red-600 h-12 w-12" />
                 </div>
@@ -54,7 +69,7 @@ function BetSlip () {
                             <div onClick={() => deleteBet(i)} className="flex absolute right-1 top-1 h-10 w-10 items-center justify-center rounded-full border border-gray-700 border-dashed cursor-pointer">
                                 <XMarkIcon className="text-red-600 h-8 w-8" />
                             </div>
-                            <div className="flex w-3/4 line-clamp-1 pr-4">
+                            <div className="flex items-center justify-center w-3/4 line-clamp-1 pr-4">
                                 <p className=''>{bet.event_id}</p>
                             </div>
                         </div>
@@ -83,7 +98,7 @@ function BetSlip () {
                             {payment ? (
                                 <CheckCircleIcon className='text-green-400 animate-pulse' />
                             ) : (
-                                <div className="flex flex-row items-center justify-center space-x-2 w-36 h-14 border border-gray-700 bg-black animate-pulse hover:animate-none cursor-pointer rounded-full" onClick={handlePayment}>
+                                <div className={`${bets.length === 0 ? 'hidden' : 'flex'} flex-row items-center justify-center space-x-2 w-36 h-14 border border-gray-700 bg-black animate-pulse hover:animate-none cursor-pointer rounded-full`} onClick={handlePayment}>
                                 <p>🥷</p>
                                 <p className="text-white">ShadowPay</p>
                                 </div>
@@ -102,6 +117,7 @@ function BetSlip () {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 

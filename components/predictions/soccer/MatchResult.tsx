@@ -30,7 +30,7 @@ const MatchResult = ( bet: Bet ) => {
         ]);
         setBetId(newId)
         setSelected(true)
-        setOpenBetSlip(true)
+        // s
     }
 
     useEffect(() => {

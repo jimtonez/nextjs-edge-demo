@@ -27,7 +27,9 @@ function UpcomingNCAA () {
                     <div key={event.id} className='flex col-span-1 md:col-span-2 aspect-w-3 aspect-h-2 cursor-pointer'>
                         <div className="flex flex-col items-center justify-center border border-dashed border-gray-700 hover:border-gray-600 rounded-xl shadow-md">
                             <div className="flex bg-[#070D0D] border-b border-dashed border-gray-700 w-full h-1/4 items-center justify-center rounded-t-xl">
-                                <p className='text-white'>{event.away_team} vs. {event.home_team}</p>
+                                <div className='flex items-center justify-center w-3/4 line-clamp-1'>
+                                    <p className='text-white'>{event.away_team} vs. {event.home_team}</p>
+                                </div>
                             </div>
                             <div className='flex flex-row items-center justify-around w-full h-full md:h-3/4 xl:h-full'>
                                 <div className='flex flex-col w-full h-full items-center justify-around space-y-2 sm:space-y-none md:space-y-4 px-8 py-4 sm:py-12 sm:px-12 md:py-8 md:px-8'>                           
