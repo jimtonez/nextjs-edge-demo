@@ -33,7 +33,8 @@ env:
   OPENSHIFT_SERVER: ${{ secrets.OPENSHIFT_SERVER }}
   OPENSHIFT_TOKEN: ${{ secrets.OPENSHIFT_TOKEN }}
   # 🖊️ EDIT to set the kube context's namespace after login. Leave blank to use your user's default namespace.
-  OPENSHIFT_NAMESPACE: "default"
+  OPENSHIFT_NAMESPACE: "cc-betting-demo"
+  OPENSHIFT_CLUSTER: "cluster-r8szc.r8szc.sandbox1991.opentlc.com"
 
   # 🖊️ EDIT to set a name for your OpenShift app, or a default one will be generated below.
   APP_NAME: "nextjs-edge-demo-dev"
@@ -210,7 +211,7 @@ jobs:
       - name: Add secure route
         run: |
           oc delete route ${{ env.APP_NAME }}
-          oc create route edge --service=${{ env.APP_NAME }} --hostname=${{ env.APP_NAME }}-${{ env.OPENSHIFT_NAMESPACE }}.apps.cluster-8qmk2.8qmk2.sandbox3038.opentlc.com
+          oc create route edge --service=${{ env.APP_NAME }} --hostname=${{ env.APP_NAME }}-${{ env.OPENSHIFT_NAMESPACE }}.apps.${{ env.OPENSHIFT_CLUSTER }}
 
       - name: Print application URL
         env:
