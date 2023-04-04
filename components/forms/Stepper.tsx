@@ -60,7 +60,7 @@ function Stepper () {
         subType: subscription
     }
 
-    console.log(session)
+    // console.log(session)
 
     
     const getUser = async () => {

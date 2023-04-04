@@ -1,6 +1,10 @@
+import { useRecoilState } from 'recoil'
+import { sportsState } from '@/atoms/sportsAtom'
 import { videoTypeTags, sportsTypeTags } from "@/constants"
 
 function TabList () {
+
+    const [currentSport, setCurrentSport] = useRecoilState(sportsState)
 
     return (
         <div className='col-span-1 md:col-span-4'>
@@ -22,7 +26,7 @@ function TabList () {
         <>
         {sportsTypeTags.map((videoType) => (
           <li key={videoType.id} className="w-auto">
-            <div key={videoType.id} className='flex cursor-pointer h-6 lg:h-8 w-auto items-center justify-center bg-gray-700 border border-red-600 rounded-full space-x-3 p-3'>
+            <div key={videoType.id} onClick={() => setCurrentSport(videoType.name)} className='flex cursor-pointer h-6 lg:h-8 w-auto items-center justify-center bg-gray-700 border border-red-600 rounded-full space-x-3 p-3'>
                 <div className='w-1/4'>
                     <p>{videoType.icon}</p>
                 </div>

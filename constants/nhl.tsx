@@ -807,13 +807,13 @@ export const nhlEvents = [
         tags: [
             {
                 name: "Hockey",
-                icon: "⚽️"
+                icon: "🏒"
             },
         ],
         teams: [
             {
                 name: "Philadelphia Flyers",
-                logo: manchesterUnited
+                logo: "https://media.api-sports.io/hockey/teams/695.png"
             },
             {
                 name: "Tie",
@@ -821,160 +821,159 @@ export const nhlEvents = [
             },
             {
                 name: "Pittsburgh Penguins",
-                logo: leicester
+                logo: "https://media.api-sports.io/hockey/teams/696.png"
             }
         ],
-        score: "3-0",
+        score: "2-4",
+        url: "https://www.youtube.com/embed/lq9yASbkCX0",
         predictions: [
             {
                 name: "Match Result",
                 tabs: [
                     {
-                        name: "Regular Time",
-                        results: [
-                            {
-                                team: "Manchester United",
-                                logo: manchesterUnited,
-                                odds: "-175",
-                                trend: "negative"
-                            },
-                            {
-                                team: "Draw",
-                                logo: manchesterUnited,
-                                odds: "+350",
-                                trend: "positive"
-                            },
-                            {
-                                team: "Leicester City",
-                                logo: leicester,
-                                odds: "+480",
-                                trend: "positive"
-                            }
-                        ]
+                        name: "1st Period",    
                     },
                     {
-                        name: "1st Half",
-                        results: [
-                            {
-                                team: "Manchester United",
-                                logo: manchesterUnited,                                
-                                odds: "+106",
-                                trend: "negative"
-                            },
-                            {
-                                team: "Draw",
-                                logo: manchesterUnited,                               
-                                odds: "+161",
-                                trend: "positive"
-                            },
-                            {
-                                team: "Leicester City",
-                                logo: leicester,
-                                odds: "+440",
-                                trend: "negative"
-                            }
-                        ]
+                        name: "2nd Period",    
                     },
                     {
-                        name: "2nd Half",
-                        results: [
-                            {
-                                team: "Manchester United",
-                                logo: manchesterUnited,                                
-                                odds: "-175",
-                                trend: "negative"
-                            },
-                            {
-                                team: "Draw",
-                                logo: manchesterUnited,    
-                                odds: "+350",
-                                trend: "positive"
-                            },
-                            {
-                                team: "Leicester City",
-                                logo: leicester,
-                                odds: "+480",
-                                trend: "positive"
-                            }
-                        ]
+                        name: "3rd Period",    
                     }
                 ]
             },
+        ]
+    },
+    {
+        id: "event-2",
+        title: "Red Wings @ Maple Leafs 4/2 | NHL Highlights 2023",
+        logo: nhl,
+        tags: [
+            {
+                name: "Hockey",
+                icon: "🏒"
+            },
+        ],
+        teams: [
+            {
+                name: "Detroit Red Wings",
+                logo: "https://media.api-sports.io/hockey/teams/682.png"
+            },
+            {
+                name: "Tie",
+                logo: nhl
+            },
+            {
+                name: "Toronto Maple Leafs",
+                logo: "https://media.api-sports.io/hockey/teams/700.png"
+            }
+        ],
+        score: "5-2",
+        url: "https://www.youtube.com/embed/3b3oKGNfcO8",
+        predictions: [
             {
                 name: "Match Result",
                 tabs: [
                     {
-                        name: "Regular Time",
-                        results: [
-                            {
-                                team: "Manchester United",
-                                logo: manchesterUnited,
-                                odds: "-175",
-                                trend: "negative"
-                            },
-                            {
-                                team: "Draw",
-                                logo: manchesterUnited,
-                                odds: "+350",
-                                trend: "positive"
-                            },
-                            {
-                                team: "Leicester City",
-                                logo: leicester,
-                                odds: "+480",
-                                trend: "positive"
-                            }
-                        ]
+                        name: "1st Period",    
                     },
                     {
-                        name: "1st Half",
-                        results: [
-                            {
-                                team: "Manchester United",
-                                logo: manchesterUnited,                                
-                                odds: "+106",
-                                trend: "negative"
-                            },
-                            {
-                                team: "Draw",
-                                logo: manchesterUnited,                               
-                                odds: "+161",
-                                trend: "positive"
-                            },
-                            {
-                                team: "Leicester City",
-                                logo: leicester,
-                                odds: "+440",
-                                trend: "negative"
-                            }
-                        ]
+                        name: "2nd Period",    
                     },
                     {
-                        name: "2nd Half",
-                        results: [
-                            {
-                                team: "Manchester United",
-                                logo: manchesterUnited,                                
-                                odds: "-175",
-                                trend: "negative"
-                            },
-                            {
-                                team: "Draw",
-                                logo: manchesterUnited,    
-                                odds: "+350",
-                                trend: "positive"
-                            },
-                            {
-                                team: "Leicester City",
-                                logo: leicester,
-                                odds: "+480",
-                                trend: "positive"
-                            }
-                        ]
+                        name: "3rd Period",    
                     }
                 ]
             },
-        ],
-        url: "https://www.youtube.com/embed/V1n0Da6zbeM?mute=1"
+        ]
+
     },
+    {
+        id: "event-3",
+        title: "Bruins @ Blues 4/2 | NHL Highlights 2023",
+        logo: nhl,
+        tags: [
+            {
+                name: "Hockey",
+                icon: "🏒"
+            },
+        ],
+        teams: [
+            {
+                name: "Boston Bruins",
+                logo: "https://media.api-sports.io/hockey/teams/673.png"
+            },
+            {
+                name: "Tie",
+                logo: nhl
+            },
+            {
+                name: "St. Louis Blues",
+                logo: "https://media.api-sports.io/hockey/teams/698.png"
+            }
+        ],
+        score: "4-3",
+        url:"https://www.youtube.com/embed/Qq9oPk8B8Fg",
+        predictions: [
+            {
+                name: "Match Result",
+                tabs: [
+                    {
+                        name: "1st Period",    
+                    },
+                    {
+                        name: "2nd Period",    
+                    },
+                    {
+                        name: "3rd Period",    
+                    }
+                ]
+            },
+        ]
+
+    },
+    {
+        id: "event-4",
+        title: "Rangers @ Capitals 4/2 | NHL Highlights 2023",
+        logo: nhl,
+        tags: [
+            {
+                name: "Hockey",
+                icon: "🏒"
+            },
+        ],
+        teams: [
+            {
+                name: "New York Rangers",
+                logo: "https://media.api-sports.io/hockey/teams/692.png"
+            },
+            {
+                name: "Tie",
+                logo: nhl
+            },
+            {
+                name: "Washington Capitals",
+                logo: "https://media.api-sports.io/hockey/teams/703.png"
+            }
+        ],
+        score: "5-2",
+        url: "https://www.youtube.com/embed/GVar8QqowQY",
+        predictions: [
+            {
+                name: "Match Result",
+                tabs: [
+                    {
+                        name: "1st Period",    
+                    },
+                    {
+                        name: "2nd Period",    
+                    },
+                    {
+                        name: "3rd Period",    
+                    }
+                ]
+            },
+        ]
+
+    },
+
 ]
