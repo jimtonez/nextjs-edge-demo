@@ -5,7 +5,6 @@ import { betsState } from '@/atoms/betsAtom';
 import { paymentState } from '@/atoms/paymentAtom';
 import { XMarkIcon, TrophyIcon, CheckCircleIcon, BanknotesIcon } from '@heroicons/react/24/outline';
 import { signIn, useSession } from 'next-auth/react'
-import axios from 'axios';
 
 interface Bet {   
     id: string,
