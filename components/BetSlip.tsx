@@ -33,7 +33,7 @@ function BetSlip () {
         // const getUser = await axios.get(`http://svc-ed-quarkus-backend.cc-betting-demo.svc.cluster.local/customer/membership?email=${encodeURIComponent(session?.user?.email!)}`)
         // const getUser = await axios.get(`https://route-ed-quarkus-backend-ssl-cc-betting-demo.apps.cluster-r8szc.r8szc.sandbox1991.opentlc.com/customer/membership`, { params: {email: session?.user?.email!} })
         const response = await fetch('/api/users', {
-            method: 'GET',
+            method: 'POST',
             body: JSON.stringify(userData),
             headers: {
                 'Content-Type': 'application/json'
