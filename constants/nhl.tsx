@@ -802,6 +802,49 @@ export const teams = [
 export const nhlEvents = [
     {
         id: "event-1",
+        title: "Golden Knights @ Wild 4/3 | NHL Highlights 2023",
+        logo: nhl,
+        tags: [
+            {
+                name: "Hockey",
+                icon: "🏒"
+            },
+        ],
+        teams: [
+            {
+                name: "Vegas Golden Knights",
+                logo: "https://media.api-sports.io/hockey/teams/702.png"
+            },
+            {
+                name: "Tie",
+                logo: nhl
+            },
+            {
+                name: "Minnesota Wild",
+                logo: "https://media.api-sports.io/hockey/teams/687.png"
+            }
+        ],
+        score: "4-3",
+        url: "https://www.youtube.com/embed/FphJm7CKW70",
+        predictions: [
+            {
+                name: "Match Result",
+                tabs: [
+                    {
+                        name: "1st Period",    
+                    },
+                    {
+                        name: "2nd Period",    
+                    },
+                    {
+                        name: "3rd Period",    
+                    }
+                ]
+            },
+        ]
+    },
+    {
+        id: "event-2",
         title: "Flyers @ Penguins 4/2 | NHL Highlights 2023",
         logo: nhl,
         tags: [
@@ -844,7 +887,7 @@ export const nhlEvents = [
         ]
     },
     {
-        id: "event-2",
+        id: "event-3",
         title: "Red Wings @ Maple Leafs 4/2 | NHL Highlights 2023",
         logo: nhl,
         tags: [
@@ -888,7 +931,7 @@ export const nhlEvents = [
 
     },
     {
-        id: "event-3",
+        id: "event-4",
         title: "Bruins @ Blues 4/2 | NHL Highlights 2023",
         logo: nhl,
         tags: [
@@ -932,7 +975,7 @@ export const nhlEvents = [
 
     },
     {
-        id: "event-4",
+        id: "event-5",
         title: "Rangers @ Capitals 4/2 | NHL Highlights 2023",
         logo: nhl,
         tags: [
