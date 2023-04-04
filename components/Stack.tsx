@@ -63,7 +63,10 @@ function Stack() {
     }
 
     return (
-        <section className="grid grid-cols-1 md:grid-cols-2 md:max-w-3xl lg:grid-cols-3 lg:max-w-5xl xl:grid-cols-4 xl:max-w-6xl mx-auto gap-4 px-2 lg:px-4 pt-10 pb-20">
+        <section className="grid grid-cols-1 md:grid-cols-2 md:max-w-3xl lg:grid-cols-3 lg:max-w-5xl xl:grid-cols-4 xl:max-w-6xl mx-auto gap-4 px-2 lg:px-4 pb-20">
+            <div className='col-span-1 md:col-span-2 lg:col-span-3 xl:col-span-4'>
+                <p className='text-white text-3xl font-bold'>Kubernetes Stack</p>
+            </div>
             <div className="col-span-1 md:col-span-2 lg:col-span-3 xl:col-span-4 space-y-2">
                 <div className='flex items-center h-full justify-center p-4 cursor-pointer border border-gray-700 rounded-xl'>
                     {renderBio()}
@@ -75,6 +78,7 @@ function Stack() {
                     {containers.map((image, i) => (
                         <div key={i} onClick={(e) => handleImageTab(e,i)} className={`flex relative ${i === currentImage ? 'animate-none' : 'animate-pulse'} w-full h-24 items-center justify-center pt-4 px-2 bg-[#070D0D] border border-purple-400 border-dashed rounded-xl shadow-md cursor-pointer`}>
                             <Image
+                                priority
                                 className={`absolute -right-2 -top-3`}
                                 src="podman.svg"
                                 alt="Next.js Logo"

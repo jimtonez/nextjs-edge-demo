@@ -18,9 +18,9 @@ function Leagues () {
      }
 
     return (
-        <section id="leagues" className="grid grid-cols-1 md:grid-cols-2 md:max-w-3xl lg:grid-cols-3 lg:max-w-5xl xl:max-w-6xl mx-auto gap-4 px-2 lg:px-4 xl:px-0 xl:pl-4">
+        <section id="leagues" className="grid grid-cols-1 md:grid-cols-2 md:max-w-3xl lg:grid-cols-3 lg:max-w-5xl xl:max-w-6xl mx-auto gap-4 px-2 lg:px-4 xl:px-0 xl:pl-4 mt-4">
             <div className='col-span-1 md:col-span-2 lg:col-span-3 xl:col-span-4'>
-                <p className='text-white text-base lg:text-xl font-semibold'>Leagues</p>
+                <p className='text-white text-3xl font-bold'>Leagues</p>
             </div>
                 <>
                 {leagues.map((league, index) => (
