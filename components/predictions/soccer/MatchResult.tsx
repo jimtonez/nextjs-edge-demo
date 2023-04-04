@@ -30,7 +30,6 @@ const MatchResult = ( bet: Bet ) => {
         ]);
         setBetId(newId)
         setSelected(true)
-        // s
     }
 
     useEffect(() => {
