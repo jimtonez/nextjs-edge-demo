@@ -21,7 +21,7 @@ export const authOptions = {
   //     const getUser = await fetch(`/api/users`, {
   //       method: 'GET'
   //     })
-  //     // const getUser = await axios.get(`http://localhost:8080/customer?email=${encodeURIComponent(session.user.email)}`)
+      // const getUser = await axios.get(`http://localhost:8080/customer?email=${encodeURIComponent(session.user.email)}`)
   //     console.log(getUser)
   //     return session // The return type will match the one returned in `useSession()`
   //   },
