@@ -5,6 +5,7 @@ import { betsState } from '@/atoms/betsAtom';
 import { paymentState } from '@/atoms/paymentAtom';
 import { XMarkIcon, TrophyIcon, CheckCircleIcon, BanknotesIcon } from '@heroicons/react/24/outline';
 import { signIn, useSession } from 'next-auth/react'
+import axios from 'axios';
 
 interface Bet {   
     id: string,
@@ -24,12 +25,17 @@ function BetSlip () {
         setBets((bets) => bets.filter((_, i) => i !== index))
     }
 
-    const handlePayment = () => {
+    // const getUser = await axios.get(`http://localhost:8080/customer?email=${encodeURIComponent(session.user.email)}`)
+
+    async function handlePayment () {
+        // const getUser = await axios.get(`http://svc-ed-quarkus-backend.cc-betting-demo.svc.cluster.local/customer/membership?email=${encodeURIComponent(session?.user?.email!)}`)
+        const getUser = await axios.get(`http://route-ed-quarkus-backend-cc-betting-demo.apps.cluster-r8szc.r8szc.sandbox1991.opentlc.com/customer/membership`, { params: {email: session?.user?.email!} })
+        console.log(getUser)
         setPayment(true)
         for (const bet of bets) {
             setBets((bets) => bets.filter((_, i) => i !== i ))
         }
-        setOpenBetSlip(false)
+        // setOpenBetSlip(false)
         setPayment(false)
     }
 
