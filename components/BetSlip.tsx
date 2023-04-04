@@ -34,9 +34,6 @@ function BetSlip () {
         const response = await fetch('/api/users', {
             method: 'GET',
             // body: JSON.stringify(userData),
-            headers: {
-                'Content-Type': 'application/json'
-            }
         })
         const data = await response.json()
         console.log(data)
