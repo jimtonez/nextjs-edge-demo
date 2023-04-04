@@ -29,7 +29,7 @@ function BetSlip () {
 
     async function handlePayment () {
         // const getUser = await axios.get(`http://svc-ed-quarkus-backend.cc-betting-demo.svc.cluster.local/customer/membership?email=${encodeURIComponent(session?.user?.email!)}`)
-        const getUser = await axios.get(`http://route-ed-quarkus-backend-cc-betting-demo.apps.cluster-r8szc.r8szc.sandbox1991.opentlc.com/customer/membership`, { params: {email: session?.user?.email!} })
+        const getUser = await axios.get(`https://route-ed-quarkus-backend-ssl-cc-betting-demo.apps.cluster-r8szc.r8szc.sandbox1991.opentlc.com/customer/membership`, { params: {email: session?.user?.email!} })
         console.log(getUser)
         setPayment(true)
         for (const bet of bets) {
