@@ -2,8 +2,8 @@ import axios from "axios";
 
 export default async (req, res) => {
     switch (req.method) {
-        case "GET":
-            const getUser = await axios.get(`https://route-ed-quarkus-backend-ssl-cc-betting-demo.apps.cluster-r8szc.r8szc.sandbox1991.opentlc.com/customer/membership`, { params: {"email": "test@test.com"} } )
+        case "POST":
+            const getUser = await axios.post(`https://route-ed-quarkus-backend-ssl-cc-betting-demo.apps.cluster-r8szc.r8szc.sandbox1991.opentlc.com/customer/membership`, { params: req.body } )
             // const getUser = await axios.get(`http://localhost:8080/customer?email=${encodeURIComponent(session.user.email)}`)
             res.status(200).json({ data: getUser.data })
         // case "POST":
