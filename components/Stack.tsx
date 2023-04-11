@@ -77,14 +77,14 @@ function Stack() {
                     <>
                     {containers.map((image, i) => (
                         <div key={i} onClick={(e) => handleImageTab(e,i)} className={`flex relative ${i === currentImage ? 'animate-none' : 'animate-pulse'} w-full h-24 items-center justify-center pt-4 px-2 bg-[#070D0D] border border-purple-400 border-dashed rounded-xl shadow-md cursor-pointer`}>
-                            <Image
+                            {/* <Image
                                 priority
                                 className={`absolute -right-2 -top-3`}
                                 src="podman.svg"
                                 alt="Next.js Logo"
                                 width={30}
                                 height={10}
-                            />
+                            /> */}
                             {renderImage(image.logo)}
                     </div>
                     ))}

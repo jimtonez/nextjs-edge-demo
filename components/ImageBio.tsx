@@ -38,7 +38,6 @@ function ImageBio ( image: Image) {
                     <div className="flex h-1/4 w-full items-center justify-center animate-pulse p-4">
                         {renderImage()}
                     </div>
-                    <svg className='h-52 w-52' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224 132"><defs><path d="M55.648 0 0 56.262l55.989 55.814 111.71-.122 55.353-55.839L167.045 0z"></path></defs><g fill="none" fill-rule="evenodd"><path fill="#261A4C" d="m0 75.858 55.993 55.853.047-19.209L.047 56.692z"></path><path fill="#382672" d="m56.039 112.504-.05 19.206 111.73-.115.029-.032v-19.174z"></path><path fill="#4B3398" d="m168.033 112.1-.284.288v19.176l55.303-55.82.05-19.199z"></path><path fill="#5E40BE" d="M55.696.43.048 56.692l55.989 55.813 111.71-.122L223.1 56.545 167.093.43z"></path><mask fill="#fff"></mask></g></svg>
                 </div>
                 <div className="flex flex-col w-full md:w-1/2 h-full space-y-4">
                     <div className='hidden md:flex flex-row items-center w-full h-auto bg-[#070D0D] border border-gray-700 border-dashed rounded-xl space-x-2 p-4'>
